@@ -1,12 +1,10 @@
 <!-- header_section - start
       ================================================== -->
 <header class="header_section header_style_1">
-	<div class="brand_logo">
-		<a class="brand_link" href="{{ site.baseurl }}/">
-			<img src="{{ site.data.settings.logo_1 | relative_url }}" alt="logo_not_found"/>
-			<img src="{{ site.data.settings.logo_2 | relative_url }}" alt="logo_not_found"/>
-		</a>
-	</div>
+  <a href="/" class="logo">
+    <span class="first">Dr.techn.</span><br />
+    <span class="second">Marcel Moosbrugger</span>
+  </a>
   <div class="language_switcher">
     {% for tongue in site.languages %}<a {% if tongue == site.active_lang %}class="active_lang"{% endif %}
       {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}|{%- endif -%}{% endfor %}</div>
