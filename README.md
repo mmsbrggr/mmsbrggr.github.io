@@ -1,7 +1,10 @@
-# dexfolio-jekyll
+# Personal Website
 
-How to install:
-- Install ruby and gem.
-- Run `bundle install`
-- Run `bundle exec jekyll serve`
+## Usage
+Just use `docker` and run:
 
+```
+docker compose up
+```
+
+Then you can access the site under `localhost:4000`.
