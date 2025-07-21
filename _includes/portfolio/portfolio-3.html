@@ -1,0 +1,41 @@
+<!-- portfolio_section - start
+        ================================================== -->
+<section class="portfolio_section section_space">
+	<div class="container">
+		<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				{{ item.title }}
+				<strong class="focus_text">{{ item.title_2 }}</strong>
+			</h2>
+		</div>
+	</div>
+	<div class="container">
+		{% for item in page.portfolio.list %}
+		<div class="portfolio_list_layout_2 wow fadeInUp2" data-wow-delay=".1s">
+			<div class="item_image">
+				<a class="image_wrap" href="{{ item.url }}">
+					<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt }}">
+				</a>
+			</div>
+			<div class="item_content">
+				<ul class="item_category ul_li">
+					{% for i in item.list %}
+					<li><a href="{{ i.link }}">{{ i.category }}</a></li>
+					{% endfor %}
+				</ul>
+				<h3 class="item_title">
+					<a href="{{ item.url }}">
+						{{ item.title }}
+					</a>
+				</h3>
+				<p>
+					{{ item.description }}
+				</p>
+				<a class="btn_text" href="{{ item.url }}"><span>{{ item.button.label }}</span></a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+<!-- portfolio_section - end
+        ================================================== -->

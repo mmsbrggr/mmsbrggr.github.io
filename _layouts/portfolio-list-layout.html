@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% include header/header-1.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb.html %}
+	<!-- portfolio_section - start
+        ================================================== -->
+	<section class="portfolio_section section_space pb-0 decoration_wrap">
+		{% for item in site.portfolio-list-layout %}
+		<div class="portfolio_list_layout wow fadeInUp2" data-wow-delay=".1s">
+			<a class="image_wrap" href="{{ item.url }}">
+				<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt }}">
+			</a>
+			<div class="item_content">
+				<h3 class="item_title">
+					<a href="{{ item.url }}">
+						{{ item.title }}
+					</a>
+				</h3>
+				<p>
+					{{ item.description }}
+				</p>
+				<a class="btn btn_shadow btn_white" href="{{ item.url }}">{{ item.button.label }}</a>
+			</div>
+		</div>
+		{% endfor %}
+	</section>
+	<!-- portfolio_section - end
+        ================================================== -->
+	{% include call-to-action/call-to-action-5.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-1.html %}

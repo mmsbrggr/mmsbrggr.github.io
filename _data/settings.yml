@@ -1,0 +1,27 @@
+# General Settings
+favicon: "/assets/images/logo/favicon.png"
+name: "dexfolio."
+
+# Logo
+logo_1: "/assets/images/logo/logo_white_2x.png"
+logo_2: "/assets/images/logo/logo_black_2x.png"
+
+# Contact info
+contact_settings:
+  email: "hello@dexfolio.net.us"
+
+# Footer info
+footer_settings:
+  copyright_text: "2022 All Right Reserved by "
+
+# Google analytics code
+google_analytics:
+  enable: false
+  key: "UA-664136761-1" # UA-664136761-1
+
+# Socail urls
+social_settings:
+  instagram_url: '#!'
+  github_url: '#!'
+  linkedin_url: '#!'
+  substack_url: '#!'

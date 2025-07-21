@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% include header/header-1.html %}
+<!-- main body - start
+      ================================================== -->
+{% include sidebar.html %}
+<!-- spacer - start
+        ================================================== -->
+<div class="spacer"></div>
+<!-- spacer - end
+        ================================================== -->
+<section class="error-page">
+	<div class="container maxwidth_1440 text-center">
+		<div class="row">
+			<div class="col col-lg-12">
+				<div class="error-content">
+					<img src="{{ "/assets/images/404.png" | relative_url}}" alt="">
+					<h3>Error! Page Not Found</h3>
+					<p>You seem can’t to find the page you’re looking for</p>
+					<a href="{{ site.baseurl }}/" title="" class="btn btn_primary">Back To Homepage</a>
+				</div>
+			</div>
+		</div>
+		<!--error-page end-->
+	</div>
+</section>
+<!--error-page end-->
+<!-- spacer - start
+        ================================================== -->
+<div class="spacer"></div>
+<!-- spacer - end
+        ================================================== -->
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer.html %}

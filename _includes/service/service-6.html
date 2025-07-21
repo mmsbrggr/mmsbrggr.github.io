@@ -1,0 +1,62 @@
+<!-- service_section - start
+        ================================================== -->
+<section class="service_section section_space decoration_wrap">
+	<div class="container">
+		<div class="section_space">
+			<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+				<h2 class="title_text">
+					{{ page.service.title }} <strong>{{ page.service.title_2 }}</strong> {{ page.service.title_3 }}
+				</h2>
+			</div>
+			<div class="row">
+				{% for item in page.service.list %}
+				<div class="col col-md-4 col-sm-6">
+					<div class="service_item_icon wow fadeInUp2" data-wow-delay=".1s">
+						<div class="item_icon">
+							<span class="icon_wrap">
+								{{ item.icon }}
+							</span>
+						</div>
+						<div class="item_content">
+							<h3 class="item_title">{{ item.title }}</h3>
+							<p class="mb-0">
+								{{ item.text }}
+							</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text">
+				{{ page.skill.title }} <strong>{{ page.skill.title_2 }}</strong>
+			</h2>
+		</div>
+		<div class="row">
+			{% for item in page.skill.skillset %}
+			<div class="col col-lg-4 col-md-6 col-sm-6">
+				<div class="service_grid wow fadeInUp2" data-wow-delay=".1s">
+					<div class="item_image">
+						<img src="{{ item.image | relative_url }}" alt="image_not_found">
+					</div>
+					<div class="item_content">
+						<h3 class="item_title">{{ item.title }}</h3>
+						<p>
+							{{ item.text }}
+						</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="block_overlay">
+		<div class="container max_width_1140">
+			<div class="block_item"></div>
+			<div class="block_item"></div>
+		</div>
+	</div>
+</section>
+<!-- service_section - end
+        ================================================== -->

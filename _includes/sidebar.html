@@ -1,0 +1,22 @@
+<!-- Off Canvas - start
+        ================================================== -->
+<div class="sidebar-menu-wrapper">
+	<div class="offcanvas_sidebar">
+		<button type="button" class="offcanvas_close_btn"><i class="fal fa-times"></i></button>
+		<div class="brand_logo">
+			<a class="brand_link" href="{{ site.baseurl }}/">
+				<img src="{{ site.data.settings.logo_2 | relative_url }}" alt="logo_not_found">
+			</a>
+		</div>
+		<h3 class="offcanvas_title">
+			{{ page.sidebar.title }}
+		</h3>
+		<p>
+			{{ page.sidebar.description }}
+		</p>
+		<a class="btn btn_danger" href="{{ page.sidebar.button.link }}">{{ page.sidebar.button.label }}</a>
+	</div>
+	<div class="offcanvas_overlay"></div>
+</div>
+<!-- Off Canvas - end
+        ================================================== -->

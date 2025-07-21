@@ -1,0 +1,26 @@
+<!-- portfolio_section - start
+        ================================================== -->
+<section class="portfolio_section wow fadeInUp2" data-wow-delay=".1s">
+	<div class="grid grid_col_3">
+		<div class="grid-sizer"></div>
+		{% for item in page.portfolio %}
+		<div class="grid-item {{ item.class }}">
+			<div class="portfolio_fullimage">
+				<a class="image_wrap" href="{{ "/portfolio-details" | relative_url }}">
+					<img src="{{ item.image | relative_url }}" alt="Portfolio Image">
+				</a>
+				<div class="item_content">
+					<h3>
+						{{ item.description }}
+					</h3>
+					<ul class="item_brand_list ul_li">
+						<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+<!-- portfolio_section - end
+        ================================================== -->

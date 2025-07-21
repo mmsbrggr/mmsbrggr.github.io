@@ -1,0 +1,52 @@
+<!-- testimonial_section - start
+================================================== -->
+<section class="testimonial_section section_space decoration_wrap">
+	<div class="container">
+		<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				{{ page.testimonial.title }} <strong>{{ page.testimonial.title_1 }}</strong>
+			</h2>
+		</div>
+		<div class="testimonial_carousel wow fadeInUp2" data-wow-delay=".1s">
+			<div class="row common_carousel_2col" data-slick='{"dots": false}'>
+				{% for item in page.testimonial.testimonials %}
+				<div class="col carousel_item">
+					<div class="testimonial_item_4">
+						<p>
+							{{ item.text }}
+						</p>
+						<div class="testimonial_admin">
+							<div class="admin_image">
+								<img src="{{ item.image | relative_url }}" alt="image_not_found">
+							</div>
+							<div class="admin_content">
+								<h3 class="admin_name">{{ item.name }}</h3>
+								<span class="admin_designation">{{ item.designation }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="client_section wow fadeInUp2 section_space_sm pb-0" data-wow-delay=".1s">
+			<ul class="client_items_group ul_li border-0">
+				{% for item in page.testimonial.client_logo %}
+				<li class="border-0">
+					<a class="client_item" href="{{ item.url }}">
+						<img src="{{ item.logo }}" alt="{{ item.logo_alt }}">
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="block_overlay">
+		<div class="container max_width_1140">
+			<div class="block_item"></div>
+			<div class="block_item"></div>
+		</div>
+	</div>
+</section>
+<!-- testimonial_section - end
+================================================== -->

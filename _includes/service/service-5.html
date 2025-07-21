@@ -1,0 +1,33 @@
+<!-- service_section - start
+        ================================================== -->
+<section class="service_section section_space">
+	<div class="container">
+		<div class="section_title_2 wow fadeInUp2 text_sm_center" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				{{ page.service.title }}
+				<strong class="focus_text">{{ page.service.title_2 }}</strong>
+			</h2>
+		</div>
+		<div class="row">
+			{% for item in page.service.list %}
+			<div class="col col-md-4 col-sm-6">
+				<div class="service_item_icon wow fadeInUp2" data-wow-delay=".1s">
+					<div class="item_icon">
+						<span class="icon_wrap">
+							{{ item.icon }}
+						</span>
+					</div>
+					<div class="item_content">
+						<h3 class="item_title">{{ item.title }}</h3>
+						<p class="mb-0">
+							{{ item.text }}
+						</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- service_section - end
+        ================================================== -->

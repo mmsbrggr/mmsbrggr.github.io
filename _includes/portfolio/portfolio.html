@@ -1,0 +1,42 @@
+<!-- portfolio_section - start
+        ================================================== -->
+<section class="portfolio_section section_space">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-9">
+				<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+					<h2 class="title_text">{{ page.service.title }}</h2>
+					<p>
+						{{ page.service.description }}
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="masonry_portfolio clearfix">
+			{% for item in site.portfolio limit:6 %}
+			<div class="element-item clearfix">
+				<div class="portfolio_card_layout wow fadeInUp2 clearfix" data-wow-delay=".1s">
+					<a class="item_image" href="{{ "portfolio-details" | relative_url }}">
+						<img src="{{ item.image }}" alt="{{ item.image_alt }}">
+					</a>
+					<div class="item_content">
+						<h3 class="item_title">
+							<a href="{{ item.url }}">{{ item.title }}</a>
+						</h3>
+						<ul class="item_category ul_li">
+							{% for item in site.portfolio.list %}
+							<li><a href="{{ item.link }}">{{ item.category }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="load_more text-center wow fadeInUp2" data-wow-delay=".1s">
+			<a class="btn btn_primary" href="/portfolio">SEE ALL PROJECTS</a>
+		</div>
+	</div>
+</section>
+<!-- portfolio_section - end
+        ================================================== -->

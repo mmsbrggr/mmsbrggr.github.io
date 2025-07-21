@@ -1,0 +1,22 @@
+<!-- client_section - start
+        ================================================== -->
+<section class="client_section section_space bg_danger">
+	<div class="container">
+		<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text text-white">
+				{{ page.client.title }} <strong>{{ page.client.title_strong }}</strong>
+			</h2>
+		</div>
+		<div class="row">
+			{% for item in page.client.client_list %}
+				<div class="col col-md-4 col-sm-6">
+					<a class="client_item bg-transparent wow fadeInUp2" data-wow-delay=".1s" href="{{ item.url }}">
+						<img src="{{ item.image | relative_url}}" alt="{{ item.name }}">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- client_section - end
+        ================================================== -->

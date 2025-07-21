@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% include header/header-5.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb-2.html %}
+	<!-- portfolio_section - start
+        ================================================== -->
+	<section class="portfolio_section">
+		{% assign sorted = site.portfolio-list-layout-2  | sort: 'date'  %}
+		{% for item in sorted %}
+		<div class="portfolio_list_layout style_2 wow fadeInUp2" data-wow-delay=".1s">
+			<a class="image_wrap" href="{{ item.url }}">
+				<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt }}">
+			</a>
+			<div class="item_content">
+				<ul class="item_category ul_li">
+					{% for i in item.list %}
+					<li><a href="{{ i.link }}">{{ i.category }}</a></li>
+					{% endfor %}
+				</ul>
+				<h3 class="item_title">
+					<a href="{{ item.url }}">
+						{{ item.title }}
+					</a>
+				</h3>
+				<p>
+					{{ item.description }}
+				</p>
+				<a class="btn_text" href="{{ item.url }}"><span>{{ item.button.label }}</span></a>
+			</div>
+		</div>
+		{% endfor %}
+	</section>
+	<!-- portfolio_section - end
+        ================================================== -->
+</main>
+<!-- main body - end
+      =====================s============================= -->
+{% include footer/footer-3.html %}

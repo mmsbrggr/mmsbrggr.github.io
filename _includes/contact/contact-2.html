@@ -1,0 +1,100 @@
+<!-- contact_section - start
+		================================================== -->
+<section class="contact_section section_space">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-9">
+				<div class="section_title wow fadeInUp2" data-wow-delay=".1s">
+					<h1 class="title_text">{{ page.contact.title }}</h1>
+					<p>
+						{{ page.contact.description }}
+					</p>
+				</div>
+			</div>
+		</div>
+		{% if site.google_maps.enable %}
+			<div class="map_section clearfix wow fadeInUp2" data-wow-delay=".1s">
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						{{ site.google_maps.code }}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		<div class="section_space">
+			<div class="row">
+				<div class="col col-md-4">
+					<div class="contact_info_list wow fadeInUp2" data-wow-delay=".1s">
+						<h3>{{ page.contact.address_title }}</h3>
+						<ul class="ul_li_block">
+							<li>{{ page.contact.address.line }}</li>
+							<li>{{ page.contact.address.line_2 }}</li>
+							<li>{{ page.contact.address.line_3 }}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-md-4">
+					<div class="contact_info_list wow fadeInUp2" data-wow-delay=".2s">
+						<h3>{{ page.contact.call_title }}</h3>
+						<ul class="ul_li_block">
+							<li><a href="#!">{{ page.contact.call.number }}</a></li>
+							<li><a href="#!">{{ page.contact.call.number_2 }}</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-md-4">
+					<div class="contact_info_list wow fadeInUp2" data-wow-delay=".3s">
+						<h3>{{ page.contact.email_title }}</h3>
+						<ul class="ul_li_block">
+							<li><a href="#!">{{ page.contact.email.email_id }}</a></li>
+							<li><a href="#!">{{ page.contact.email.email_id_2 }}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				<span class="d-md-block">{{ page.contact.form_title }}</span> {{ page.contact.form_title_2 }}
+			</h2>
+		</div>
+		<div class="row">
+			<div class="col col-lg-10">
+				<div class="contact_form">
+					<form action="https://formsubmit.co/tortoizthemes@gmail.com" method="POST">
+						<div class="select_option clearfix wow fadeInUp2" data-wow-delay=".1s">
+							<select>
+								<option data-display="Interested in …">Select Your Option</option>
+								<option value="1">Intersted in Mobile App</option>
+								<option value="2">Interested in Website</option>
+								<option value="3">Only UI Design</option>
+								<option value="4">Only Development</option>
+								<option value="5">Branding</option>
+								<option value="6">Motion design</option>
+								<option value="7">Concept Design</option>
+							</select>
+						</div>
+						<div class="row">
+							<div class="col col-lg-6">
+								<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+									<input type="text" name="name" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="col col-lg-6">
+								<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+									<input type="email" name="email" placeholder="Email">
+								</div>
+							</div>
+						</div>
+						<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+							<textarea name="description" placeholder="Project description (Optional)"></textarea>
+						</div>
+						<button type="submit" class="btn btn_primary wow fadeInUp2" data-wow-delay=".1s">SUBMIT NOW</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- contact_section - end
+		================================================== -->

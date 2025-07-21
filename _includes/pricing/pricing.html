@@ -1,0 +1,40 @@
+<!-- pricing_section - start
+================================================== -->
+<section class="pricing_section section_space decoration_wrap">
+	<div class="container">
+		<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text">
+				{{ page.pricing.title }} <strong>{{ page.pricing.title_2 }}</strong>
+			</h2>
+		</div>
+		<div class="row justify-content-center">
+			{% for item in page.pricing.plan %}
+			<div class="col col-lg-4 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+				<div class="pricing_item {% if item.title == 'Business' %}active {% endif %}">
+					<div class="pricing_header">
+						<h3 class="pricing_title">{{ item.title }}</h3>
+						<span class="pricing_amount">
+							<sup>{{ item.sign }}</sup>
+							<strong>{{ item.price }}</strong>
+						</span>
+					</div>
+					<ul class="pricing_info_list ul_li_block">
+						{% for i in item.list %}
+							<li>{{ i.info }}</li>
+						{% endfor %}
+					</ul>
+					<a class="pricing_btn" href="{{ item.url }}">{{ item.select }}</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="block_overlay">
+		<div class="container max_width_1140">
+			<div class="block_item"></div>
+			<div class="block_item"></div>
+		</div>
+	</div>
+</section>
+<!-- pricing_section - end
+================================================== -->

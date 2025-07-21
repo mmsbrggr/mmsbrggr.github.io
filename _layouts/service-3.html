@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% include header/header-5.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb-2.html %}
+	{% include service/service-5.html %}
+	<!-- video_section - start
+        ================================================== -->
+	<div class="video_section section_space parallaxie" style="background-image: url('{{ "assets/images/banner/banner_bg_2.jpg" | relative_url }}');">
+		<div class="ovarlay bg_dark"></div>
+		<div class="container text-center">
+			<a class="play_btn popup_video bg_danger" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24.002" height="34" viewBox="0 0 24.002 34">
+					<path d="M0,0V34L24,17Z" fill="#fff" />
+				</svg>
+			</a>
+		</div>
+	</div>
+	<!-- video_section - end
+        ================================================== -->
+    {% include skill/skill-2.html %}
+	{% include testimonial/testimonial-3.html %}
+	{% include award-and-recognition/award-and-recognition-1.html %}
+	{% include client/client-2.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-3.html %}

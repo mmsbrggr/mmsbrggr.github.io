@@ -1,0 +1,44 @@
+baseurl: ""
+url: "marcelmoos.com"
+
+collections_dir: collections
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: "/:name"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+languages: ["en", "de"]
+default_lang: "en"
+exclude_from_localization: ["js", "images", "css"]
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-polyglot
+

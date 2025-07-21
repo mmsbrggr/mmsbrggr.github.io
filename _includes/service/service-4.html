@@ -1,0 +1,109 @@
+<!-- feature_section - start
+        ================================================== -->
+<section class="feature_section section_space pb-0 decoration_wrap">
+	<div class="container maxwidth_1440">
+		<div class="row align-items-center justify-content-lg-between">
+			<div class="col col-lg-5 order-last">
+				<div class="feature_image wow fadeInUp2" data-wow-delay=".1s">
+					<img src="{{ page.featured.image | relative_url }}" alt="Feature Image">
+				</div>
+			</div>
+			<div class="col col-lg-6">
+				<div class="feature_content">
+					<h2 class="wow fadeInUp2" data-wow-delay=".1s">
+						{{ page.featured.text_1 }}
+					</h2>
+					<p class="wow fadeInUp2" data-wow-delay=".2s">
+						{{ page.featured.text_2 }}
+					</p>
+					<p class="wow fadeInUp2" data-wow-delay=".3s">
+						{{ page.featured.text_3 }}
+					</p>
+					<div class="wow fadeInUp2 mb-3" data-wow-delay=".4s">
+						<a class="btn btn_shadow btn_white" href="{{ page.featured.url }}">{{ page.featured.text_4 }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="line_decoration_y">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	<div class="line_decoration_x">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+</section>
+<!-- feature_section - end
+        ================================================== -->
+<!-- service_section - start
+        ================================================== -->
+<section class="service_section decoration_wrap">
+	<div class="section_space pb-0 decoration_wrap">
+		<div class="container maxwidth_1440">
+			<div class="row">
+				{% for item in page.service.services %}
+				<div class="col col-lg-4 col-md-6">
+					<div class="service_primary wow fadeInUp2" data-wow-delay=".1s">
+
+						<h3 class="item_title">
+							<span class="d-md-block">{{ item.title }}</span> {{ item.title_2 }}
+						</h3>
+						<p class="mb-0">
+							{{ item.text }}
+						</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="section_space decoration_wrap">
+		<div class="container maxwidth_1440">
+			<div class="section_title_3 text-center wow fadeInUp2" data-wow-delay=".1s">
+				<h2 class="title_text">{{ page.service.title_text }}</h2>
+				<div class="row justify-content-center">
+					<div class="col col-lg-8">
+						<p>
+							{{ page.service.title_text_2 }}
+							{{ page.service.title_text_3 }}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				{% for item in page.service_list %}
+				<div class="col col-lg-6">
+					<div class="service_boxed wow fadeInUp2" data-wow-delay=".1s">
+						<div class="item_icon">
+							{{ item.image }}
+						</div>
+						<div class="item_content">
+							<h3 class="item_title">{{ item.title }}</h3>
+							<p class="mb-0">
+								{{ item.text }}
+							</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="line_decoration_y">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	<div class="line_decoration_x">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+</section>
+<!-- service_section - end
+        ================================================== -->

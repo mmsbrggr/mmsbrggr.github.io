@@ -1,0 +1,22 @@
+<!-- banner_section - start
+        ================================================== -->
+<section class="banner_section banner_style_1 text-white parallaxie" style="background-image: url( {{ page.banner.image | relative_url }});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-10">
+				<div class="banner_content">
+					<h1 class="wow fadeInUp2" data-wow-delay=".1s">{{ page.banner.title }}</h1>
+					<p class="wow fadeInUp2" data-wow-delay=".2s">
+						{{ page.banner.content }}
+					</p>
+					<div class="wow fadeInUp2" data-wow-delay=".3s">
+						<a class="btn btn_primary" href="{{ page.banner.button.link }}">{{ page.banner.button.label }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- banner_section - end
+        ================================================== -->

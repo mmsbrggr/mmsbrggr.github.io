@@ -1,0 +1,54 @@
+<!-- about_section_4 - start
+        ================================================== -->
+<section class="about_section_4 section_space">
+	<div class="container maxwidth_1440">
+		<h2 class="wow fadeInUp2" data-wow-delay=".1s">
+			{{ page.about.title }}
+		</h2>
+		<p class="mb-0 wow fadeInUp2" data-wow-delay=".1s">
+			{{ page.about.text }}
+		</p>
+		<img class="wow fadeInUp2" data-wow-delay=".1s" src="{{ page.about.image | relative_url }}" alt="Desk Setup Image">
+		<div class="row justify-content-lg-between">
+			<div class="col col-lg-6 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+				<h3>
+					{{ page.about.awards_list.title }}
+				</h3>
+				<p class="mb-0">
+					{{ page.about.awards_list.text }}
+				</p>
+			</div>
+			<div class="col col-lg-5 col-md-6 wow fadeInUp2" data-wow-delay=".2s">
+				<div class="award_item style_2">
+					<h4 class="year_text">{{ page.about.awards_list.list.year_1 }}</h4>
+					<p class="mb-0">
+						{{ page.about.awards_list.list.text_1 }}
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-lg-end">
+			<div class="col col-lg-10 wow fadeInUp2" data-wow-delay=".1s">
+				<hr>
+			</div>
+			<div class="col col-lg-5 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+				<div class="award_item style_2">
+					<h4 class="year_text">{{ page.about.awards_list.list.year_2 }}</h4>
+					<p class="mb-0">
+						{{ page.about.awards_list.list.text_2 }}
+					</p>
+				</div>
+			</div>
+			<div class="col col-lg-5 col-md-6 wow fadeInUp2" data-wow-delay=".2s">
+				<div class="award_item style_2">
+					<h4 class="year_text">{{ page.about.awards_list.list.year_3 }}</h4>
+					<p class="mb-0">
+						{{ page.about.awards_list.list.text_3 }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- about_section_4 - end
+        ================================================== -->

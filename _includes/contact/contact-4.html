@@ -1,0 +1,56 @@
+<!-- contact_section - start
+        ================================================== -->
+<section class="contact_section section_space">
+	<div class="container">
+		<div class="contact_form_2">
+			<div class="row justify-content-center">
+				<div class="col col-lg-7">
+					<h2 class="wow fadeInUp2" data-wow-delay=".1s">
+						{{ page.form_title }}
+					</h2>
+				</div>
+			</div>
+			<form action="https://formsubmit.co/tortoizthemes@gmail.com" method="POST">
+				<div class="select_option clearfix wow fadeInUp2" data-wow-delay=".1s">
+					<select>
+						<option data-display="Interested in …">Select Your Option</option>
+						<option value="1">Intersted in Mobile App</option>
+						<option value="2">Interested in Website</option>
+						<option value="3">Only UI Design</option>
+						<option value="4">Only Development</option>
+						<option value="5">Branding</option>
+						<option value="6">Motion design</option>
+						<option value="7">Concept Design</option>
+					</select>
+				</div>
+				<div class="row">
+					<div class="col col-md-6">
+						<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+							<input type="text" name="name" placeholder="Your Name">
+						</div>
+					</div>
+					<div class="col col-md-6">
+						<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+					</div>
+				</div>
+				<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+					<textarea name="description" placeholder="Project description (Optional)"></textarea>
+				</div>
+				<button type="submit" class="btn btn_info wow fadeInUp2" data-wow-delay=".1s">SUBMIT NOW</button>
+			</form>
+		</div>		
+	{% if site.google_maps.enable %}
+		<div class="map_section clearfix wow fadeInUp2" data-wow-delay=".1s">
+			<div class="mapouter">
+                <div class="gmap_canvas">
+			        {{ site.google_maps.code }}
+			    </div>
+			</div>
+		</div>
+	{% endif %}
+	</div>
+</section>
+<!-- contact_section - end
+        ================================================== -->

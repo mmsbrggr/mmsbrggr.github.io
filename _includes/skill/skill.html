@@ -1,0 +1,37 @@
+<!-- skill_section - start
+        ================================================== -->
+<section class="skill_section section_space pb-0 decoration_wrap">
+	<div class="container maxwidth_1440">
+		<div class="row align-items-center justify-content-lg-between">
+			<div class="col col-lg-5 order-last">
+				<div class="image_wrap wow fadeInUp2" data-wow-delay=".1s">
+					<img src="{{ page.skill.image | relative_url }}" alt="Skill Image">
+				</div>
+			</div>
+			<div class="col col-lg-6">
+				{% for item in page.skill.skillset %}
+				<div class="progress_item wow fadeInUp2" data-wow-delay=".1s">
+					<h4 class="item_title mb-0 text-uppercase">{{ item.label }}</h4>
+					<div class="progress">
+						<div class="progress_bar wow Rx_width_{{ item.number }} animated" role="progressbar" data-wow-duration="1s" data-wow-delay=".4s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+							<span class="value_text">{{ item.number }}%</span>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="line_decoration_y">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	<div class="line_decoration_x">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+</section>
+<!-- skill_section - end
+        ================================================== -->

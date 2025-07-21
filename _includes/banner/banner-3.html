@@ -1,0 +1,29 @@
+<!-- banner_section - start
+        ================================================== -->
+<section class="banner_section banner_style_4 parallaxie" style="background-image: url({{ page.image.banner | relative_url}});">
+	<div class="container maxwidth_1440">
+		<div class="banner_content wow fadeInUp2" data-wow-delay=".1s">
+			<h1><span class="d-block">{{ page.banner.text }}</span>{{ page.banner.text_2 }}</h1>
+			<p class="wow fadeInUp2" data-wow-delay=".2s">
+				{{ page.banner.text_3 }}
+			</p>
+			<div class="flex_content_wrap wow fadeInUp2" data-wow-delay=".3s">
+				<a class="play_btn_2 popup_video" href="{{ page.banner.youtube_link }}">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24.002" height="34" viewBox="0 0 24.002 34">
+							<path d="M0,0V34L24,17Z" fill="#fff" />
+						</svg>
+					</span>
+					<small class="text-white">{{ page.banner.text_4 }}</small>
+				</a>
+				<ul class="social_primary ul_li">
+					<li><a href="{{ site.data.social_settings.dribbble_url }}">DRIBBBLE</a></li>
+					<li><a href="{{ site.data.social_settings.behance_url }}">BEHANCE</a></li>
+					<li><a href="{{ site.data.social_settings.instagram_url }}">INSTAGRAM</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- banner_section - end
+        ================================================== -->

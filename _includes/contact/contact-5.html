@@ -1,0 +1,83 @@
+<!-- contact_section - start
+        ================================================== -->
+<div class="contact_section section_space">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-6">
+				<div class="contact_icon_box wow fadeInUp2" data-wow-delay=".1s">
+					<div class="item_icon">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="item_content">
+						{{ page.email }}
+					</div>
+				</div>
+			</div>
+			<div class="col col-lg-6">
+				<div class="contact_icon_box wow fadeInUp2" data-wow-delay=".1s">
+					<div class="item_icon">
+						<i class="fas fa-phone"></i>
+					</div>
+					<div class="item_content">
+						{{ page.phone_number }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-lg-12">
+				<div class="contact_form">
+					<form action="https://formsubmit.co/tortoizthemes@gmail.com" method="POST">
+						<div class="row">
+							<div class="col col-lg-4 wow fadeInUp2" data-wow-delay=".1s">
+								<div class="select_option clearfix">
+									<select>
+										<option data-display="Interested in …">Select Your Option</option>
+										<option value="1">Intersted in Mobile App</option>
+										<option value="2">Interested in Website</option>
+										<option value="3">Only UI Design</option>
+										<option value="4">Only Development</option>
+										<option value="5">Branding</option>
+										<option value="6">Motion design</option>
+										<option value="7">Concept Design</option>
+									</select>
+								</div>
+							</div>
+							<div class="col col-lg-4 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+								<div class="form_item">
+									<input type="text" name="name" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="col col-lg-4 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+								<div class="form_item">
+									<input type="email" name="email" placeholder="Email">
+								</div>
+							</div>
+						</div>
+						<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+							<textarea name="description" placeholder="Project description (Optional)"></textarea>
+						</div>
+						<div class="text-center wow fadeInUp2" data-wow-delay=".1s">
+							<button type="submit" class="btn btn_danger">SEND MESSAGE</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- contact_section - end
+        ================================================== -->
+<!-- google map section - start
+        ================================================== -->
+{% if site.google_maps.enable %}
+	<div class="map_section clearfix wow fadeInUp2" data-wow-delay=".1s">
+		<div class="mapouter">
+			<div class="gmap_canvas">
+				{{ site.google_maps.code }}
+			</div>
+		</div>
+	</div>
+{% endif %}
+<!-- google map section - end
+        ================================================== -->

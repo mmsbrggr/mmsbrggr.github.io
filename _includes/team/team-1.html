@@ -1,0 +1,47 @@
+<!-- team_section - start
+        ================================================== -->
+<section class="team_section section_space bg_black decoration_wrap">
+	<div class="container maxwidth_1440">
+		<h2 class="primary_section_title text-white wow fadeInUp2" data-wow-delay=".1s">{{ page.team_member.title }}</h2>
+		<div class="row">
+			{% for item in page.team_member.member %}
+			<div class="col col-lg-3 col-md-4 col-sm-6">
+				<div class="team_item_2 wow fadeInUp2" data-wow-delay=".2s">
+					<div class="team_image">
+						<img src="{{ item.image }}" alt="{{ item.name }}">
+						<div class="team_social">
+							<ul class="social_primary ul_li_block">
+								<li class="facebook"><a href="{{ item.facebook_url }}"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="twitter"><a href="{{ item.twitter_url }}"><i class="fab fa-twitter"></i></a></li>
+								<li class="linkedin"><a href="{{ item.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="youtube"><a href="{{ item.youtube_url }}"><i class="fab fa-youtube"></i></a></li>
+								<li class="instagram"><a href="{{ item.instagram_url }}"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+							<span class="plus_btn"><i class="fal fa-plus"></i></span>
+						</div>
+					</div>
+					<div class="team_content">
+						<h3 class="team_name text-white">{{ item.name }}</h3>
+						<span class="team_title">{{ item.position }}</span>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="line_decoration_y">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	<div class="line_decoration_x">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	</div>
+</section>
+<!-- team_section - end
+        ================================================== -->

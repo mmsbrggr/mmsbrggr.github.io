@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% include header/header-6.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include offcanvas/offcanvas.html %}
+	<!-- spacer - start
+        ================================================== -->
+	<div class="spacer"></div>
+	<!-- spacer - end
+        ================================================== -->
+	<!-- about_section - start
+        ================================================== -->
+	<section class="about_section section_space">
+		<div class="container">
+			<div class="row">
+				<div class="col col-lg-9">
+					<div class="section_title wow fadeInUp2" data-wow-delay=".1s">
+						<h1 class="title_text">{{ page.about.title }}</h1>
+						<p>
+							{{ page.about.description }}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="image_wrap wow fadeInUp2" data-wow-delay=".1s">
+				<img src="{{ page.about.image | relative_url }}" alt="image_not_found">
+			</div>
+			<h2 class="wow fadeInUp2" data-wow-delay=".1s">{{ page.about.text }}</span></h2>
+			<h3 class="wow fadeInUp2" data-wow-delay=".1s">
+				{{ page.about.text_2 }}
+			</h3>
+			<p class="wow fadeInUp2" data-wow-delay=".1s">
+				{{ page.about.text_3 }}
+			</p>
+			<div class="row">
+				<div class="col col-md-6">
+					<div class="image_wrap wow fadeInUp2" data-wow-delay=".1s">
+						<img src="{{ page.about.image_2 | relative_url }}" alt="image_not_found">
+					</div>
+				</div>
+				<div class="col col-md-6">
+					<div class="image_wrap wow fadeInUp2" data-wow-delay=".1s">
+						<img src="{{ page.about.image_3 | relative_url }}" alt="image_not_found">
+					</div>
+				</div>
+			</div>
+			<p class="wow fadeInUp2" data-wow-delay=".1s">
+				{{ page.about.text_4 }}
+			</p>
+			<div class="image_wrap mb-0 wow fadeInUp2" data-wow-delay=".1s">
+				<img src="{{ page.about.image_4 | relative_url }}" alt="image_not_found">
+			</div>
+		</div>
+	</section>
+	<!-- about_section - end
+        ================================================== -->
+	{% include award-and-recognition/award-and-recognition.html %}
+	{% include client/client.html %}
+	{% include team/team.html %}
+	{% include call-to-action/call-to-action-1.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer.html %}

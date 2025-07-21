@@ -1,0 +1,23 @@
+<!-- client_section - start
+        ================================================== -->
+<section class="client_section section_space">
+	<div class="container">
+		<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				{{ page.client.title }}
+				<strong class="focus_text">{{ page.client.title_strong }}</strong>
+			</h2>
+		</div>
+		<ul class="client_items_group ul_li wow fadeInUp2" data-wow-delay=".3s">
+			{% for item in page.client.client_list %}
+				<li>
+					<a class="client_item" href="{{ item.url }}">
+						<img src="{{ item.image | relative_url }}" alt="{{ item.name }}">
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+<!-- client_section - end
+        ================================================== -->

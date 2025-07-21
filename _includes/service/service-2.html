@@ -1,0 +1,35 @@
+<!-- service_section - start
+        ================================================== -->
+<section class="service_section section_space bg_gray">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-9">
+				<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+					<h2 class="title_text">{{ page.expert.title }}</h2>
+					<p>
+						{{ page.expert.description }}
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			{% for item in page.expert.experts %}
+			<div class="col col-lg-4 col-md-6 col-sm-6">
+				<div class="service_grid wow fadeInUp2" data-wow-delay=".1s">
+					<div class="item_image">
+						<img src="{{ item.image | relative_url }}" alt="image_not_found">
+					</div>
+					<div class="item_content">
+						<h3 class="item_title">{{ item.title }}</h3>
+						<p>
+							{{ item.description }}
+						</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- service_section - end
+        ================================================== -->

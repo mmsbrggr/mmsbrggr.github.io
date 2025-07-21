@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+	<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+		<div class="body_wrap">
+			<!-- body_wrap - start -->
+			{% include back-to-top.html %}
+			<!-- preloader - start -->
+			<!-- <div id="preloader"></div> -->
+			<!-- preloader - end -->
+			{{ content }}
+		</div>
+		<!-- body_wrap - end -->
+		{% include footer-js.html %}
+	</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!-- counter_section - start
+        ================================================== -->
+<section class="counter_section">
+	<div class="container">
+		<div class="row">
+			{% for item in page.counter %}
+			<div class="col col-md-4 col-sm-6">
+				<div class="counter_item wow fadeInUp2" data-wow-delay=".1s">
+					<div class="count_text">{{ item.number }}</div>
+					<h3 class="item_title"><small class="d-md-block">{{ item.text }}</small> {{ item.text_2 }}</h3>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- counter_section - end
+        ================================================== -->

@@ -1,0 +1,75 @@
+<!-- contact_section - start
+        ================================================== -->
+<section class="contact_section section_space decoration_wrap">
+	<div class="container maxwidth_1440">
+	{% if site.google_maps.enable %}
+		<div class="map_section wow fadeInUp2" data-wow-delay=".1s">
+			<div class="mapouter">
+                <div class="gmap_canvas">
+			        {{ site.google_maps.code }}
+			    </div>
+			</div>
+		</div>
+	{% endif %}
+		<div class="contact_area_2">
+			<div class="row justify-content-lg-between">
+				<div class="col col-lg-5">
+					<div class="contact_content">
+						<h2 class="wow fadeInUp2" data-wow-delay=".1s">
+							 {{ page.contact.title }}
+						</h2>
+						<p class="mb-0 wow fadeInUp2" data-wow-delay=".2s">
+							{{ page.contact.description }}
+						</p>
+					</div>
+				</div>
+				<div class="col col-lg-6">
+					<div class="contact_form wow fadeInUp2" data-wow-delay=".2s">
+						<form action="https://formsubmit.co/tortoizthemes@gmail.com" method="POST">
+							<div class="select_option clearfix">
+								<select>
+									<option data-display="Interested in …">Select Your Option</option>
+									<option value="1">Intersted in Mobile App</option>
+									<option value="2">Interested in Website</option>
+									<option value="3">Only UI Design</option>
+									<option value="4">Only Development</option>
+									<option value="5">Branding</option>
+									<option value="6">Motion design</option>
+									<option value="7">Concept Design</option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="col col-lg-6">
+									<div class="form_item">
+										<input type="text" name="name" placeholder="Your Name">
+									</div>
+								</div>
+								<div class="col col-lg-6">
+									<div class="form_item">
+										<input type="email" name="email" placeholder="Email">
+									</div>
+								</div>
+							</div>
+							<div class="form_item">
+								<textarea name="description" placeholder="Project description (Optional)"></textarea>
+							</div>
+							<button type="submit" class="btn btn_shadow btn_primary">SUBMIT NOW</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="line_decoration_y">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+	<div class="line_decoration_x">
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+		<div class="line_item"></div>
+	</div>
+</section>
+<!-- contact_section - end
+        ================================================== -->

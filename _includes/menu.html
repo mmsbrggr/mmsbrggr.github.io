@@ -1,0 +1,28 @@
+<!-- Menu - start
+        ================================================== -->
+<ul class="Offcanvas_menu_list navbar-nav">
+	{% for item in site.data.menus.toc %}
+	{% if item.subfolderitems[0] %}
+	<li class="nav-item dropdown {% if item.title == page.group %}active{% endif %}">
+		<a class="nav-link dropdown-toggle" href="#" id="{{ item.title }}_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			{{ item.title }}
+		</a>
+		<ul class="submenu dropdown-menu" aria-labelledby="{{ item.title }}_submenu">
+			{% for entry in item.subfolderitems %}
+			<li {% if entry.url==page.url %}class="active" {% endif %}><a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+				<ul class="submenu dropdown-menu" aria-labelledby="{{ entry.page }}">
+					{% for nav in entry.subsubfolderitems %}
+					<li {% if nav.url==page.url and nav.page==page.subgroup %}class="active" {% endif %}>
+						<a class="dropdown-item" href="{{ nav.url }}">{{ nav.page }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>
+<!-- Menu - end
+        ================================================== -->

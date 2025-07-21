@@ -1,0 +1,133 @@
+---
+layout: default
+---
+{% include header/header-2.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include offcanvas/offcanvas.html %}
+	<!-- spacer - start
+        ================================================== -->
+	<div class="spacer"></div>
+	<!-- spacer - end
+        ================================================== -->
+	<!-- blog_details - start
+        ================================================== -->
+	<section class="blog_details section_space">
+		<div class="container">
+			<div class="row">
+				<div class="col col-lg-10">
+					<div class="section_title">
+						<h1 class="title_text">Blog Details</h1>
+						<p>
+							{{ page.title }}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_space_rl">
+			<div class="blog_details_image">
+				<img src="{{ page.image | relative_url }}" alt="Blog Image">
+			</div>
+		</div>
+		<div class="blog_details_content section_space">
+			<div class="container">
+				<ul class="post_meta ul_li">
+					<li>
+						{% assign author = site.data.author[page.author] %}
+						<a href="#!">
+							<span class="admin_thumbnail">
+								<img src="{{ author.avatar }}" alt="image_not_found">
+							</span>
+							<span>by <u>{{ author.display_name }}</u></span>
+						</a>
+					</li>
+					<li>
+						<svg xmlns="http://www.w3.org/2000/svg" width="33.685" height="37.678" viewBox="0 0 33.685 37.678">
+							<g transform="translate(-0.157 -0.161)">
+								<path d="M-6.139,2.254a1.115,1.115,0,0,0,1.1-1.127A1.115,1.115,0,0,0-6.139,0H-27.546a6.21,6.21,0,0,0-6.139,6.28v21.9a6.21,6.21,0,0,0,6.139,6.28H-6.139A6.21,6.21,0,0,0,0,28.178V10.144A1.115,1.115,0,0,0-1.1,9.017a1.115,1.115,0,0,0-1.1,1.127V28.178A3.981,3.981,0,0,1-6.139,32.2H-27.546a3.981,3.981,0,0,1-3.935-4.025V6.28a3.981,3.981,0,0,1,3.935-4.025Z" transform="translate(0.157 37.839) rotate(-180)" fill="#272727"></path>
+								<path d="M0,1.127A1.115,1.115,0,0,1,1.1,0,1.115,1.115,0,0,1,2.2,1.127V8.212A1.115,1.115,0,0,1,1.1,9.339,1.115,1.115,0,0,1,0,8.212Z" transform="translate(22.867 0.161)" fill="#272727"></path>
+								<path d="M0,1.127A1.115,1.115,0,0,1,1.1,0,1.115,1.115,0,0,1,2.2,1.127V8.212A1.115,1.115,0,0,1,1.1,9.339,1.115,1.115,0,0,1,0,8.212Z" transform="translate(9.016 0.161)" fill="#272727"></path>
+								<path d="M1.1,2.254A1.115,1.115,0,0,1,0,1.127,1.115,1.115,0,0,1,1.1,0H21.25a1.115,1.115,0,0,1,1.1,1.127,1.115,1.115,0,0,1-1.1,1.127Z" transform="translate(5.824 14.653)" fill="#272727"></path>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(7.87 20.61)" fill="#525252"></ellipse>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(7.87 27.051)" fill="#525252"></ellipse>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(15.426 20.61)" fill="#525252"></ellipse>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(15.426 27.051)" fill="#525252"></ellipse>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(22.981 20.61)" fill="#525252"></ellipse>
+								<ellipse cx="1.259" cy="1.288" rx="1.259" ry="1.288" transform="translate(22.981 27.051)" fill="#525252"></ellipse>
+							</g>
+						</svg>
+						{{ page.date | date: "%d %B, %Y" }}
+					</li>
+				</ul>
+				<h2>
+					{{ page.title }}
+				</h2>
+				{{ page.content }}
+			</div>
+			<div class="container">
+				<div class="tag_share_links">
+					<div class="sb_tag_list">
+						<h3>Tags</h3>
+						<ul class="ul_li">
+							{% for tag in page.tags %}
+							{% capture tag_name %}{{ tag }}{% endcapture %}
+							<li> <a href="#">{{ tag_name }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="item_share_links">
+						<h3>Share</h3>
+						<ul class="social_primary ul_li">
+							<li><a class="color_facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a class="color_twitter" href="https://twitter.com/intent/tweet?text=&url={{site.url}}{{page.url}}"><i class="fab fa-twitter"></i></a></li>
+							<li><a class="color_linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title=&summary=&source={{page.title}}"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="other_blogpost_wrap">
+					<div class="blog_other_post">
+						{% if page.previous.url %}
+						<a class="arrow_btn" href="{{page.previous.url}}"><i class="fal fa-angle-left"></i></a>
+						<div class="item_content">
+							<span>PREVIOUS</span>
+							<h4><a href="{{page.previous.url}}"> {{ page.previous.title | truncatewords: 3 }}</a></h4>
+						</div>
+						{% endif %}
+					</div>
+					<div class="blog_other_post">
+						{% if page.next.url %}
+						<a class="arrow_btn" href="{{ page.next.url }}"><i class="fal fa-angle-right"></i></a>
+						<div class="item_content">
+							<span>NEXT</span>
+							<h4><a href="{{ page.next.url }}">{{ page.next.title | truncatewords: 3 }}</a></h4>
+						</div>
+						 {% endif %}
+					</div>
+				</div>
+				{% if author %}
+				<div class="blog_post_author">
+					<div class="image_wrap">
+						<img src="{{ author.avatar }}" alt="Author Image">
+					</div>
+					<div class="content_wrap">
+						<h5 class="author_name">{{ author.name }}</h5>
+						<p class="mb-0">
+							{{ author.bio }}
+						</p>
+					</div>
+					<button class="follow_btn" type="button">Follow</button>
+				</div>
+				{% endif %}
+				{% if site.disqus.shortname %}
+				   {% include disqus-comments.html %}
+				{% endif %}
+			</div>
+	</section>
+	<!-- blog_details - end
+        ================================================== -->
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-1.html %}

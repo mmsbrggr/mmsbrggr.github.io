@@ -1,0 +1,134 @@
+<!-- dark_contact_section - start
+        ================================================== -->
+<section class="dark_contact_section">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-9">
+				<div class="section_title_4 wow fadeInUp2" data-wow-delay=".1s">
+					<h2 class="title_text text-white">
+						{{ page.contact.title }}
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="contact_form">
+			<form action="https://formsubmit.co/tortoizthemes@gmail.com" method="POST">
+				<div class="select_option clearfix wow fadeInUp2" data-wow-delay=".1s">
+					<select>
+						<option data-display="Interested in …">Select Your Option</option>
+						<option value="1">Intersted in Mobile App</option>
+						<option value="2">Interested in Website</option>
+						<option value="3">Only UI Design</option>
+						<option value="4">Only Development</option>
+						<option value="5">Branding</option>
+						<option value="6">Motion design</option>
+						<option value="7">Concept Design</option>
+					</select>
+				</div>
+				<div class="row">
+					<div class="col col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+						<div class="form_item">
+							<input type="text" name="name" placeholder="Your Name">
+						</div>
+					</div>
+					<div class="col col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+						<div class="form_item">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+					</div>
+				</div>
+				<div class="form_item wow fadeInUp2" data-wow-delay=".1s">
+					<textarea name="description" placeholder="Project description (Optional)"></textarea>
+				</div>
+				<div class="wow fadeInUp2" data-wow-delay=".1s">
+					<button type="submit" class="btn btn_danger rounded-pill">SEND MESSAGE</button>
+				</div>
+			</form>
+		</div>
+		{% if site.google_maps.enable %}
+			<div class="map_section section_space clearfix wow fadeInUp2" data-wow-delay=".1s">
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						{{ site.google_maps.code }}
+					</div>
+				</div>
+			</div>
+		{% endif %}		
+		</div>
+		<div class="contact_line_2 wow fadeInUp2">
+			<span class="d-block"><a href="#!">{{ site.data.settings.contact_settings.phone_number }}</a></span>
+			<strong class="d-block"><a href="#!">{{ site.data.settings.contact_settings.email }}</a></strong>
+		</div>
+	</div>
+</section>
+<!-- dark_contact_section - end
+        ================================================== -->
+<!-- instagram_section - start
+        ================================================== -->
+<div class="instagram_section section_space">
+	<div class="container maxwidth_1440">
+		<div class="section_title_4 text-center wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text">
+				Instagram <strong>Feeds</strong>
+			</h2>
+		</div>
+		<div class="instagram_shoot_wrap wow fadeInUp2" data-wow-delay=".1s">
+			<ul class="ul_li_center zoom-gallery">
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_1.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_1.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_2.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_2.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_3.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_3.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_4.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_4.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_5.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_5.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+			</ul>
+			<ul class="ul_li_center zoom-gallery">
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_6.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_6.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_7.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_7.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_8.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_8.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_9.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_9.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+				<li>
+					<a class="popup_image" href="{{ "/assets/images/instagram/instagram_image_10.jpg" | relative_url}}">
+						<img src="{{ "/assets/images/instagram/instagram_image_10.jpg" | relative_url}}" alt="image_not_found">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- instagram_section - end
+        ================================================== -->

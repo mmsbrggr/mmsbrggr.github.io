@@ -1,0 +1,33 @@
+<!-- award_section - start
+        ================================================== -->
+<section class="award_section section_space bg_gray">
+	<div class="container">
+		<div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+			<h2 class="title_text mb-0">
+				{{ page.award_recognition.title }} <span class="d-lg-block">{{ page.award_recognition.title_2 }}</span>
+				<strong class="focus_text">{{ page.award_recognition.title_strong }}</strong>
+			</h2>
+		</div>
+		<div class="row">
+			{% for item in page.award_recognition.awards_list %}
+			<div class="col col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+				<div class="award_item style_3">
+					<div class="item_logo">
+						<a class="item_logo_link" href="{{ item.url }}">
+							<img src="{{ item.image | relative_url}}" alt="{{ item.title }} Logo">
+						</a>
+					</div>
+					<h3 class="item_title">{{ item.title }}</h3>
+					<ul class="award_list ul_li_block">
+						{% for i in item.list %}
+							<li><a href="{{ i.url }}">{{ i.text }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- award_section - end
+        ================================================== -->

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% include header/header-1.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb.html %}
+	<!-- portfolio_section - start
+        ================================================== -->
+	<section class="portfolio_section section_space pb-0 decoration_wrap">
+		<div class="container-fluid p-0">
+			<div class="row no_gutter">
+				{% assign sorted = site.portfolio-grid-v1 | reverse %}
+				{% for item in  sorted %}
+				<div class="col col-lg-4 col-md-6 wow fadeInUp2" data-wow-delay=".1s">
+					<div class="portfolio_grid_layout">
+						<span class="item_date">{{ item.date | date: "%Y" }}</span>
+						<a class="image_wrap" href="{{ item.url }}">
+							<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt }}">
+						</a>
+						<div class="item_content">
+							<h3 class="item_title">{{ item.title }}</h3>
+							<ul class="item_category ul_li">
+								{% for i in item.list %}
+								<li><a href="{{ i.link }}">{{ i.category }}</a></li>
+								{% endfor %}
+							</ul>
+							<a class="details_link" href="{{ item.url }}">
+								<i class="fal fa-long-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<!-- portfolio_section - end
+        ================================================== -->
+	{% include call-to-action/call-to-action-5.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-1.html %}

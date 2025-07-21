@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% include header/header-1.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include offcanvas/offcanvas.html %}
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb.html %}
+	{% include service/service-4.html %}
+	<!-- intro_video_section - start
+        ================================================== -->
+	<div class="intro_video_section decoration_wrap">
+		<div class="container maxwidth_1440">
+			<div class="intro_video wow fadeInUp2" data-wow-delay=".1s">
+				<img src="{{ "/assets/images/about/about_img_7.jpg" | relative_url}}" alt="Video Banner Image">
+				<a class="play_btn_2 m-0" href="#!">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24.002" height="34" viewBox="0 0 24.002 34">
+							<path d="M0,0V34L24,17Z" fill="#ffffff" />
+						</svg>
+					</span>
+					<small class="text-white">See how we work</small>
+				</a>
+			</div>
+		</div>
+		<div class="line_decoration_y">
+			<div class="line_item"></div>
+			<div class="line_item"></div>
+			<div class="line_item"></div>
+		</div>
+		<div class="line_decoration_x">
+			<div class="line_item"></div>
+			<div class="line_item"></div>
+			<div class="line_item"></div>
+		</div>
+	</div>
+	<!-- intro_video_section - end
+        ================================================== -->
+	{% include testimonial/testimonial-4.html %}
+	{% include call-to-action/call-to-action-2.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-1.html %}

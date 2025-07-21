@@ -1,0 +1,16 @@
+<!-- Off Canvas - start
+        ================================================== -->
+<div class="sidebar-menu-wrapper">
+	<div class="offcanvas_sidebar">
+		<button type="button" class="offcanvas_close_btn"><i class="fal fa-times"></i></button>
+		<div class="brand_logo">
+			<a class="brand_link" href="{{ site.baseurl }}/">
+				<img src="{{ site.data.settings.logo_2 | relative_url }}" alt="logo_not_found">
+			</a>
+		</div>
+		{% include menu.html %}
+	</div>
+	<div class="offcanvas_overlay"></div>
+</div>
+<!-- Off Canvas - end
+        ================================================== -->

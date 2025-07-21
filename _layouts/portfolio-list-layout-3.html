@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% include header/header-4.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include offcanvas/offcanvas.html %}
+	{% include breadcrumb/breadcrumb-3.html %}
+	<!-- portfolio_section - start
+        ================================================== -->
+	<section class="portfolio_section">
+		<div class="portfolio_split_wrap">
+			{% assign sorted = site.portfolio-list-layout-3 | reverse %}
+			{% for item in sorted %}
+			<div class="portfolio_list_layout style_2 wow fadeInUp2" data-wow-delay=".1s">
+				<a class="image_wrap" href="{{ item.url }}">
+					<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt }}">
+				</a>
+				<div class="item_content">
+					<ul class="item_category ul_li">
+						{% for i in item.list %}
+						<li><a href="{{ i.link }}">{{ i.category }}</a></li>
+						{% endfor %}
+					</ul>
+					<h3 class="item_title">
+						<a href="{{ item.url }}">
+							{{ item.title }}
+						</a>
+					</h3>
+					<p>
+						{{ item.description }}
+					</p>
+					<a class="btn btn_danger rounded-pill" href="{{ item.url }}">{{ item.button.label }}</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+	<!-- portfolio_section - end
+        ================================================== -->
+</main>
+<!-- main body - end
+      =====================s============================= -->
+{% include footer/footer-4.html %}

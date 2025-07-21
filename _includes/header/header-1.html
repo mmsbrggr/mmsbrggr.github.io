@@ -1,0 +1,60 @@
+<!-- header_section - start
+      ================================================== -->
+<header class="header_section header_style_2">
+	<nav class="main_menu navbar navbar-expand-lg">
+		<div class="brand_logo">
+			<a class="brand_link" href="{{ site.baseurl }}/">
+				<img src="{{ site.data.settings.logo_2 | relative_url }}" alt="logo_not_found">
+				<img src="{{ site.data.settings.logo_2 | relative_url }}" alt="logo_not_found">
+			</a>
+		</div>
+		<div class="main_menu_inner collapse navbar-collapse" id="main_menu_dropdown">
+			<ul class="main_menu_list ul_li text-uppercase">
+				{% for item in site.data.menus.toc %}
+				{% if item.subfolderitems[0] %}
+				<li class="nav-item dropdown {% if item.title == page.group %}active{% endif %}">
+					<a class="nav-link" href="#" id="{{ item.title }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						{{ item.title }}
+					</a>
+					<ul class="submenu dropdown-menu" aria-labelledby="{{ item.title }}">
+						{% for entry in item.subfolderitems %}
+						<li {% if entry.url==page.url %}class="active" {% endif %}><a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+							<ul class="submenu dropdown-menu" aria-labelledby="{{ entry.page }}">
+								{% for nav in entry.subsubfolderitems %}
+								<li {% if nav.url==page.url and nav.page==page.subgroup %}class="active" {% endif %}>
+									<a class="dropdown-item" href="{{ nav.url }}">{{ nav.page }}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		<ul class="header_btns_group ul_li">
+			<li>
+				<button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fal fa-bars"></i>
+				</button>
+			</li>
+			<li>
+				<button type="button" class="offcanvas_btn offcanvas_btn_2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30">
+						<g transform="translate(0 30) rotate(-90)">
+							<rect width="19" height="4" rx="2" transform="translate(11)" fill="#fff" />
+							<rect width="15" height="4" rx="2" transform="translate(15 16) rotate(-180)" fill="#fff" />
+							<rect width="6" height="4" rx="2" transform="translate(0)" fill="#fff" />
+							<rect width="10" height="4" rx="2" transform="translate(30 16) rotate(-180)" fill="#fff" />
+							<rect width="30" height="4" rx="2" transform="translate(0 24)" fill="#fff" />
+						</g>
+					</svg>
+				</button>
+			</li>
+		</ul>
+	</nav>
+</header>
+<!-- header_section - end
+      ================================================== -->
