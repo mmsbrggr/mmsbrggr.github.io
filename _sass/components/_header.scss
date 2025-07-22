@@ -11,14 +11,17 @@
 
   &.sticky {
     position: fixed;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
-    animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 250ms ease-in-out 0s normal none 1 running fadeInDown;
   }
 }
 
+$sticky_text_color: lighten($color_black, 10%);
 /* header section - End */
 
+// Logo - Start
 .header_section {
   .logo {
     display: inline-block;
@@ -29,11 +32,11 @@
 
     span {
       text-shadow: 0 0 0 $color_primary;
-      transition: text-shadow 0.5s;
+      transition: text-shadow 100ms;
     }
 
     &:hover span {
-      text-shadow: 4px 4px 0 $color_primary;
+      text-shadow: 3px 3px 0 $color_primary;
     }
 
     .first {
@@ -41,6 +44,32 @@
     }
   }
 }
+
+.header_section.sticky {
+  .logo {
+    color: $sticky_text_color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .first {
+    font-size: 16px;
+    color: $color_primary;
+  }
+
+  $shadow_color: lighten($color_primary, 20%);
+
+  span {
+    text-shadow: 0 0 0 $shadow_color;
+    transition: text-shadow 100ms;
+  }
+
+  &:hover span {
+    text-shadow: 3px 3px 0 $shadow_color;
+  }
+}
+
+// Logo - End
 
 // Langauge switcher - Start
 .header_section {
@@ -62,6 +91,17 @@
 
     a:last-child {
       padding-right: 0;
+    }
+  }
+}
+
+.header_section.sticky {
+  .language_switcher {
+    color: $sticky_text_color;
+    font-size: 20px;
+
+    a {
+      color: $sticky_text_color;
     }
   }
 }
@@ -313,7 +353,7 @@
   justify-content: space-between;
 
   &.sticky {
-    padding: 20px 90px;
+    padding: 12px 90px;
   }
 }
 
