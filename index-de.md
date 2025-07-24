@@ -5,12 +5,11 @@ permalink: "/"
 
 ############################ Banner ##################################
 banner:
-  title: 'Wir bringen <span class="d-md-block">Digitalisierung</span> auf das nächste Level'
-  content: "Dexfolio is a creative web agency that help it’s customer starting there online business & unique products."
-  image: "/assets/images/banner/banner_bg_1.jpg"
+  title: 'Hi, Ich bin Marcel <span>Informatiker & Kommunikator</span>' 
+  content: "Dr. Moosbrugger ist Informatikforscher und leidenschaftlicher Wissenschaftskommunikator."
+  image: "/assets/images/banner/banner-my.jpg"
   button:
-    link: "/about"
-    label: "Learn More"
+    label: "Mehr erfahren"
 
 ############################ Services ##################################
 expert:

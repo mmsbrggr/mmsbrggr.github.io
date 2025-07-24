@@ -16,6 +16,10 @@
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
     animation: 250ms ease-in-out 0s normal none 1 running fadeInDown;
   }
+
+  a {
+    transition: none;
+  }
 }
 
 $sticky_text_color: lighten($color_black, 10%);
