@@ -41,4 +41,5 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-polyglot
+  - jekyll-redirect-from
 

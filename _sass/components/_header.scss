@@ -112,6 +112,38 @@ $sticky_text_color: lighten($color_black, 10%);
 
 // Language switcher - End
 
+// header style light - Start
+.header_style_light {
+
+  .language_switcher {
+    color: $sticky_text_color;
+
+    a {
+      color: $sticky_text_color;
+    }
+  }
+
+  $shadow_color: lighten($color_primary, 20%);
+
+  .logo {
+    color: $sticky_text_color;
+
+    .first {
+      color: $color_primary;
+    }
+
+    span {
+      text-shadow: 0 0 0 $shadow_color;
+    }
+
+    &:hover span {
+      text-shadow: 3px 3px 0 $shadow_color;
+    }
+  }
+}
+
+// header style light - End
+
 // Main Menu - Start
 .main_menu_list {
   >li {

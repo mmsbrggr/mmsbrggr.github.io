@@ -1,3 +1,8 @@
 
 title: "Dr. Marcel Moosbrugger" 
 description: "Dr. Marcel Moosbrugger - Keynotes & Talks - Wissenschaftskommunikation - Forschung"
+
+# Footer info
+footer_settings:
+  copyright_text: "Alle Rechte vorbehalten von"
+  legal_notice: "IMPRESSUM"

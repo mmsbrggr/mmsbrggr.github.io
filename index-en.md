@@ -7,7 +7,7 @@ permalink: "/"
 banner:
   title: 'Hi, I am Marcel computer scientist & communicator' 
   content: "Dr. Moosbrugger is a computer science researcher and passionate science communicator."
-  image: "/assets/images/banner/banner-my.jpg"
+  image: "/assets/images/banner/banner.jpg"
   button:
     label: "Learn More"
 
