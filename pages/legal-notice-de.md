@@ -1,5 +1,5 @@
 ---
-layout: "legal-notice"
+layout: "legal"
 lang: "de"
 permalink: "/impressum"
 page_id: "legal-notice"

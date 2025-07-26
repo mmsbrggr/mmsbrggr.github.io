@@ -6,13 +6,18 @@
       <p class="copyright_text mb-0"><i class="fal fa-copyright"></i> {{ site.time | date: '%Y' }} {{
         site.data.settings.footer_settings.copyright_text }} <a class="text-white" href="{{ site.baseurl }}/">{{
           site.data.settings.name }}</a></p>
-      <ul class="social_primary ul_li">
-        <li><a href="/legal-notice">{{ site.data.settings.footer_settings.legal_notice }}</a></li>
-        <li><a href="{{ site.data.settings.social_settings.linkedin_url }}">LINKEDIN</a></li>
-        <li><a href="{{ site.data.settings.social_settings.substack_url }}">SUBSTACK</a></li>
-        <li><a href="{{ site.data.settings.social_settings.github_url }}">GITHUB</a></li>
-        <li><a href="{{ site.data.settings.social_settings.instagram_url }}">INSTAGRAM</a></li>
-      </ul>
+      <div>
+        <ul class="social_primary ul_li">
+          <li><a href="{{ site.data.settings.social_settings.linkedin_url }}">LINKEDIN</a></li>
+          <li><a href="{{ site.data.settings.social_settings.substack_url }}">SUBSTACK</a></li>
+          <li><a href="{{ site.data.settings.social_settings.github_url }}">GITHUB</a></li>
+          <li><a href="{{ site.data.settings.social_settings.instagram_url }}">INSTAGRAM</a></li>
+        </ul>
+        <ul class="legal ul_li">
+          <li><a href="/legal-notice">{{ site.data.settings.footer_settings.legal_notice }}</a></li>
+          <li><a href="/data-privacy">{{ site.data.settings.footer_settings.data_privacy}}</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
