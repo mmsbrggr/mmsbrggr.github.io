@@ -7,3 +7,24 @@ footer_settings:
   copyright_text: "Alle Rechte vorbehalten von"
   legal_notice: "IMPRESSUM"
   data_privacy: "DATENSCHUTZ"
+
+cookie_banner:
+  neccessary:
+    name: "Notwendig"
+    description: "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie helfen bei Dingen wie dem Einloggen und dem Festlegen Ihrer Datenschutzeinstellungen."
+  analytical:
+    name: "Analytisch"
+    description: "Diese Cookies helfen uns, die Website zu verbessern, indem sie verfolgen, welche Seiten am beliebtesten sind und wie sich Besucher auf der Website bewegen."
+  banner:
+    description: "Wir verwenden Cookies auf unserer Website, um Ihr Nutzererlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Traffic zu analysieren. <a href='/de/datenschutz' target='_blank'>Cookie-Richtlinie.</a>"
+    acceptAllButtonText: "Alle akzeptieren"
+    acceptAllButtonAccessibleLabel: "Alle Cookies akzeptieren"
+    rejectNonEssentialButtonText: "Nicht notwendige ablehnen"
+    rejectNonEssentialButtonAccessibleLabel: "Nicht notwendige ablehnen"
+    preferencesButtonText: "Einstellungen"
+    preferencesButtonAccessibleLabel: "Einstellungen anpassen"
+
+  preferences: 
+    title: "Passen Sie Ihre Cookie-Einstellungen an"
+    onText: "An"
+    offText: "Aus"

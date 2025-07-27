@@ -1,0 +1,62 @@
+{% assign tl = site.data.settings.cookie_banner %}
+<script src="/assets/js/silktide-consent-manager.js"></script>
+<script>
+  silktideCookieBannerManager.updateCookieBannerConfig({
+    background: {
+      showBackground: false,
+    },
+    cookieIcon: {
+      position: "bottomLeft"
+    },
+    cookieTypes: [
+      {
+        id: "necessary",
+        name: "{{ tl.neccessary.name }}",
+        description: "<p>{{ tl.neccessary.description }}</p>",
+        required: true,
+        onAccept: function () { },
+      },
+      {
+        id: "analytical",
+        name: "{{ tl.analytical.name }}",
+        description: "<p>{{ tl.analytical.description }}</p>",
+        required: false,
+        onAccept: function () {
+          gtag('consent', 'update', {
+            analytics_storage: 'granted',
+          });
+          dataLayer.push({
+            'event': 'consent_accepted_analytical',
+          });
+        },
+        onReject: function () {
+          gtag('consent', 'update', {
+            analytics_storage: 'denied',
+          });
+        }
+      }
+    ],
+    text: {
+      banner: {
+        description: "<p>{{ tl.banner.description }}</p>",
+        acceptAllButtonText: "{{ tl.banner.acceptAllButtonText }}",
+        acceptAllButtonAccessibleLabel: "{{ tl.banner.acceptAllButtonAccessibleLabel }}",
+        rejectNonEssentialButtonText: "{{ tl.banner.rejectNonEssentialButtonText }}",
+        rejectNonEssentialButtonAccessibleLabel: "{{ tl.banner.rejectNonEssentialButtonAccessibleLabel }}",
+        preferencesButtonText: "{{ tl.banner.preferencesButtonText }}",
+        preferencesButtonAccessibleLabel: "{{ tl.banner.preferencesButtonAccessibleLabel }}"
+      },
+      preferences: {
+        title: "{{ tl.preferences.title }}",
+        description: "<p>{{ tl.preferences.description }}</p>",
+        creditLinkText: "",
+        creditLinkAccessibleLabel: "",
+        on: "{{ tl.preferences.onText }}",
+        off: "{{ tl.preferences.offText }}"
+      }
+    },
+    position: {
+      banner: "bottomRight"
+    }
+  });
+</script>

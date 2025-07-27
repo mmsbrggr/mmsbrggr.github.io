@@ -4,12 +4,12 @@ name: "Dr. Moosbrugger"
 
 # Contact info
 contact_settings:
-  email: "hello@dexfolio.net.us"
+  email: "marcel@marcelmoos.com"
 
 # Google analytics code
 google_analytics:
   enable: false
-  key: "UA-664136761-1" # UA-664136761-1
+  key: "UA-664136761-1" 
 
 # Socail urls
 social_settings:
