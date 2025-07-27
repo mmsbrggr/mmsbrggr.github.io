@@ -8,8 +8,8 @@ contact_settings:
 
 # Google analytics code
 google_analytics:
-  enable: false
-  key: "UA-664136761-1" 
+  enable: true 
+  key: "G-1FW0SSZT8G"
 
 # Socail urls
 social_settings:

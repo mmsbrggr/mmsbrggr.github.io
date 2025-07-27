@@ -13,8 +13,10 @@
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
       $('.backtotop:hidden').stop(true, true).fadeIn();
+      $('#silktide-cookie-icon:hidden').stop(true, true).fadeIn();
     } else {
       $('.backtotop').stop(true, true).fadeOut();
+      $('#silktide-cookie-icon').stop(true, true).fadeOut();
     }
   });
   $(function() {

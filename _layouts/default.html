@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	{% include head.html %}
-
+  <!-- analytics are only included if configured AND in production environment  -->
+  {% if site.data.settings.google_analytics.enable and jekyll.environment == "production" %}
+	{% include analytics.html %}
+  {% endif %}
 	<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
 		<div class="body_wrap">
 			<!-- body_wrap - start -->
@@ -13,7 +16,6 @@
 		</div>
 		<!-- body_wrap - end -->
 		{% include footer-js.html %}
-		{% include silktide-consent-manager.html %}
 	</body>
 
 </html>
