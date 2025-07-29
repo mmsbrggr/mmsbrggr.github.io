@@ -4,6 +4,7 @@
 // Footer Default Style - Start
 .footer_section {
   .social_primary {
+    justify-content: space-between;
     padding: 5px 0;
 
     a {
@@ -11,6 +12,11 @@
         color: #ffffff;
       }
     }
+
+  }
+
+  .links {
+    max-width: 350px;
   }
 
   .copyright_text {
@@ -20,12 +26,8 @@
   .legal {
     padding: 5px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-    li {
-      &:not(:last-child) {
-        margin-right: 40px;
-      }
-    }
+    display: flex;
+    justify-content: space-between;
 
     a {
       color: rgba(255, 255, 255, 0.8);

@@ -6,12 +6,16 @@
       <p class="copyright_text mb-0"><i class="fal fa-copyright"></i> {{ site.time | date: '%Y' }} {{
         site.data.settings.footer_settings.copyright_text }} <a class="text-white" href="{{ site.baseurl }}/">{{
           site.data.settings.name }}</a></p>
-      <div>
+      <div class="links wow fadeInUp2" data-wow-delay=".1s">
         <ul class="social_primary ul_li">
-          <li><a href="{{ site.data.settings.social_settings.linkedin_url }}">LINKEDIN</a></li>
+          <li><a href="{{ site.data.settings.social_settings.linkedin_url }}"><i class="fab fa-linkedin"
+                title="Linkedin" aria-label="Linkedin"></i></a>
+          </li>
+          <li><a href="{{ site.data.settings.social_settings.github_url }}"><i class="fab fa-github" title="Github"
+                aria-label="Github"></i></a></li>
+          <li><a href="{{ site.data.settings.social_settings.instagram_url }}"><i class="fab fa-instagram"
+                title="Instagram" aria-label="Instagram"></i></a></li>
           <li><a href="{{ site.data.settings.social_settings.substack_url }}">SUBSTACK</a></li>
-          <li><a href="{{ site.data.settings.social_settings.github_url }}">GITHUB</a></li>
-          <li><a href="{{ site.data.settings.social_settings.instagram_url }}">INSTAGRAM</a></li>
         </ul>
         <ul class="legal ul_li">
           <li><a href="/legal-notice">{{ site.data.settings.footer_settings.legal_notice }}</a></li>
