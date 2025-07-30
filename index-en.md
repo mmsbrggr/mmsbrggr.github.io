@@ -11,24 +11,6 @@ banner:
   button:
     label: "Learn More"
 
-############################ Services ##################################
-expert:
-  title: "Our expertise"
-  description: "Making changes in your life is great and it is the way we grow and develop as people change is a constant."
-  experts:
-    - title: "Strategy"
-      description: "The first people youll meet are our business technology experts."
-      image: "/assets/images/service/service_img_1.jpg"
-    - title: "Product Design"
-      description: "In this stage, we translate the strategic basis of the project."
-      image: "/assets/images/service/service_img_2.jpg"
-    - title: "Development"
-      description: "Our code crafters are included in the project from the beginning."
-      image: "/assets/images/service/service_img_3.jpg"
-  button:
-    link: "/portfolio"
-    label: "SEE ALL PROJECTS"
-
 ############################ Awards & recognitions ##################################
 award_recognition:
   title: "Awards & recognitions"
@@ -87,32 +69,37 @@ award_recognition:
         - text: "Best Retail Activation"
           url: "#!"
 
-############################ Client ##################################
-client:
-  title: "Our clients"
+############################ Services ##################################
+expert:
+  title: "Our expertise"
   description: "Making changes in your life is great and it is the way we grow and develop as people change is a constant."
-  client_list:
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_1.png"
-      url: "#!"
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_2.png"
-      url: "#!"
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_3.png"
-      url: "#!"
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_4.png"
-      url: "#!"
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_5.png"
-      url: "#!"
-    - name: "image_not_found"
-      image: "/assets/images/client/client_logo_6.png"
-      url: "#!"
+  experts:
+    - title: "Strategy"
+      description: "The first people youll meet are our business technology experts."
+      image: "/assets/images/service/service_img_1.jpg"
+    - title: "Product Design"
+      description: "In this stage, we translate the strategic basis of the project."
+      image: "/assets/images/service/service_img_2.jpg"
+    - title: "Development"
+      description: "Our code crafters are included in the project from the beginning."
+      image: "/assets/images/service/service_img_3.jpg"
+  button:
+    link: "/portfolio"
+    label: "SEE ALL PROJECTS"
 
-############################ Contact ##################################
-contact:
-  title: "Let’s create"
-  title_2: "progress together"
+############################ Testimonial ##################################
+testimonial:
+  title: "Client"
+  image: "/assets/images/backgrounds/bg_1.jpg"
+  testmonials:
+    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
+      name: "Stuard Martin"
+      position: "director at Slack"
+    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
+      name: "Stuard Martin"
+      position: "director at Slack"
+    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
+      name: "Stuard Martin"
+      position: "director at Slack"
+
 ---
