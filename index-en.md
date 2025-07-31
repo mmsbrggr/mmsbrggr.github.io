@@ -11,6 +11,40 @@ banner:
   button:
     label: "Learn More"
 
+############################ Services ##################################
+services:
+  title: "Our Services"
+  description: >
+    From the research lab to your team, I translate <strong>complex topics into actionable knowledge</strong>,
+        offering expert guidance in cutting-edge technologies and trends to empower your team, organization, and audience.
+  items:
+    - title: "Talks & Keynotes"
+      image: "/assets/images/service/keynotes.jpg"
+      description: >
+        Engaging keynotes that demystify complex technologies.
+            I translate the latest trends into clear, compelling narratives that inform and inspire your audience.
+      call_to_action:
+        text: "Request Talk & Keynote"
+        link: "mailto:requests@marcelmoos.com?subject=Speaking Request"
+
+    - title: "Workshops"
+      image: "/assets/images/service/workshops.jpg"
+      description: >
+        Go beyond theory with these in-depth, interactive workshops.
+            Your team will gain hands-on experience with cutting-edge tools, equipping them with the practical skills needed to innovate and excel.
+      call_to_action:
+        text: "Request Workshop"
+        link: "mailto:requests@marcelmoos.com?subject=Workshop Request"
+
+    - title: "Consulting"
+      image: "/assets/images/service/consulting.jpg"
+      description: >
+        Strategic guidance to solve your organization's unique challenges.
+            I partner with you to implement tailored technology strategies, turning your company's potential into measurable results.
+      call_to_action:
+        text: "Request Consulting"
+        link: "mailto:requests@marcelmoos.com?subject=Consulting Request"
+
 ############################ Awards & recognitions ##################################
 award_recognition:
   title: "Awards & recognitions"
@@ -69,23 +103,6 @@ award_recognition:
         - text: "Best Retail Activation"
           url: "#!"
 
-############################ Services ##################################
-expert:
-  title: "Our expertise"
-  description: "Making changes in your life is great and it is the way we grow and develop as people change is a constant."
-  experts:
-    - title: "Strategy"
-      description: "The first people youll meet are our business technology experts."
-      image: "/assets/images/service/service_img_1.jpg"
-    - title: "Product Design"
-      description: "In this stage, we translate the strategic basis of the project."
-      image: "/assets/images/service/service_img_2.jpg"
-    - title: "Development"
-      description: "Our code crafters are included in the project from the beginning."
-      image: "/assets/images/service/service_img_3.jpg"
-  button:
-    link: "/portfolio"
-    label: "SEE ALL PROJECTS"
 
 ############################ Testimonial ##################################
 testimonial:
