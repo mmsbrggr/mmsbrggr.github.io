@@ -3,6 +3,12 @@ layout: "home"
 lang: "en"
 permalink: "/"
 
+############################ Navigation ##################################
+navigation:
+    items:
+    - title: "Services"
+      scroll_to: "#services"
+
 ############################ Banner ##################################
 banner:
   title: 'Hi, I am Marcel computer scientist & communicator' 
@@ -13,7 +19,7 @@ banner:
 
 ############################ Services ##################################
 services:
-  title: "Our Services"
+  title: "Services"
   description: >
     From the research lab to your team, I translate <strong>complex topics into actionable knowledge</strong>,
         offering expert guidance in cutting-edge technologies and trends to empower your team, organization, and audience.

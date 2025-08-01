@@ -1,13 +1,33 @@
 <!-- header_section - start
       ================================================== -->
-<header class="header_section header_style_1">
-  <a href="/" class="logo">
-    <span class="first">Dr.techn.</span><br />
-    <span class="second">Marcel Moosbrugger</span>
-  </a>
-  <div class="language_switcher">
-    {% for tongue in site.languages %}<a {% if tongue == site.active_lang %}class="active_lang"{% endif %}
-      {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>{%- if forloop.last == false -%}|{%- endif -%}{% endfor %}</div>
+<header class="header_section header_style_2">
+  <nav class="main_menu navbar navbar-expand-lg">
+    <a href="/" class="logo">
+      <span class="first">Dr.techn.</span><br />
+      <span class="second">Marcel Moosbrugger</span>
+    </a>
+    <div class="main_menu_inner collapse navbar-collapse" id="main_menu_dropdown">
+      <ul class="main_menu_list ul_li text-uppercase">
+        {% for item in page.navigation.items %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.scroll_to }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+		<ul class="header_btns_group ul_li">
+			<li>
+				<button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fal fa-bars"></i>
+				</button>
+			</li>
+      <li>
+        <div class="language_switcher">
+          {% for tongue in site.languages %}<a rel="alternate" {% if tongue == site.active_lang %}class="active_lang"{% endif %}
+            {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} hreflang="{{ tongue }}" lang="{{ tongue }}" >{{ tongue }}</a>{%- if forloop.last == false -%}|{%- endif -%}{% endfor %}</div>
+      </li>
+		</ul>
+  </nav>
 </header>
 <!-- header_section - end
       ================================================== -->

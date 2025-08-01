@@ -843,6 +843,22 @@
 ================================================== */
 @media screen and (max-width: 1024px) {
 
+  .header_section,
+  .header_section.sticky {
+    .logo {
+      font-size: 18px;
+      line-height: 18px;
+
+      .first {
+        font-size: 16px;
+      }
+    }
+
+    .language_switcher {
+      font-size: 18px;
+    }
+  }
+
   .banner_style_2 h1,
   .banner_style_3 h1 {
     font-size: 154px;
@@ -1492,10 +1508,9 @@
   .main_menu_inner {
     left: 0;
     right: 0;
-    position: fixed;
-    background-color: #ffffff;
-    border-top: 1px solid #f5f5f5;
-    // box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.02);
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
   }
 
   .main_menu_list>li,
@@ -1517,13 +1532,14 @@
       a {
         font-size: 15px;
         padding: 15px 0;
+        color: $color_black;
       }
     }
   }
 
   .header_style_2 {
     .main_menu_inner {
-      top: 90px;
+      top: 100%;
     }
   }
 
@@ -2012,6 +2028,22 @@
 /* media screen and (max-width: 767px) - start
 ================================================== */
 @media screen and (max-width: 767px) {
+
+  .header_section,
+  .header_section.sticky {
+    .logo {
+      font-size: 16px;
+      line-height: 16px;
+
+      .first {
+        font-size: 14px;
+      }
+    }
+
+    .language_switcher {
+      font-size: 16px;
+    }
+  }
 
   .banner_style_1 h1 {
     font-size: 54px;

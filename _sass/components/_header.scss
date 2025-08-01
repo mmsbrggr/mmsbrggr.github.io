@@ -11,14 +11,33 @@
 
   &.sticky {
     position: fixed;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
     animation: 250ms ease-in-out 0s normal none 1 running fadeInDown;
+
+    .navbar-toggler {
+      color: $color_black;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+    }
   }
 
   a {
     transition: none;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+    margin-top: 3px;
   }
 }
 
@@ -54,22 +73,23 @@ $sticky_text_color: lighten($color_black, 10%);
     color: $sticky_text_color;
     font-size: 20px;
     line-height: 20px;
-  }
 
-  .first {
-    font-size: 16px;
-    color: $color_primary;
-  }
 
-  $shadow_color: lighten($color_primary, 20%);
+    .first {
+      font-size: 16px;
+      color: $color_primary;
+    }
 
-  span {
-    text-shadow: 0 0 0 $shadow_color;
-    transition: text-shadow 100ms;
-  }
+    $shadow_color: lighten($color_primary, 20%);
 
-  &:hover span {
-    text-shadow: 3px 3px 0 $shadow_color;
+    span {
+      text-shadow: 0 0 0 $shadow_color;
+      transition: text-shadow 100ms;
+    }
+
+    &:hover span {
+      text-shadow: 3px 3px 0 $shadow_color;
+    }
   }
 }
 
@@ -112,39 +132,13 @@ $sticky_text_color: lighten($color_black, 10%);
 
 // Language switcher - End
 
-// header style light - Start
-.header_style_light {
-
-  .language_switcher {
-    color: $sticky_text_color;
-
-    a {
-      color: $sticky_text_color;
-    }
-  }
-
-  $shadow_color: lighten($color_primary, 20%);
-
-  .logo {
-    color: $sticky_text_color;
-
-    .first {
-      color: $color_primary;
-    }
-
-    span {
-      text-shadow: 0 0 0 $shadow_color;
-    }
-
-    &:hover span {
-      text-shadow: 3px 3px 0 $shadow_color;
-    }
+// Main Menu - Start
+.header_section.sticky .main_menu_list {
+  >li>a {
+    color: $color_black;
   }
 }
 
-// header style light - End
-
-// Main Menu - Start
 .main_menu_list {
   >li {
     position: relative;
@@ -159,7 +153,7 @@ $sticky_text_color: lighten($color_black, 10%);
       font-size: 18px;
       padding: 15px 0;
       font-weight: 500;
-      color: $color_black;
+      color: #fff;
       letter-spacing: -0.5px;
     }
 
@@ -251,6 +245,39 @@ $sticky_text_color: lighten($color_black, 10%);
     }
   }
 }
+
+// header style light - Start
+.header_style_light {
+
+  .language_switcher {
+    color: $sticky_text_color;
+
+    a {
+      color: $sticky_text_color;
+    }
+  }
+
+  $shadow_color: lighten($color_primary, 20%);
+
+  .logo {
+    color: $sticky_text_color;
+
+    .first {
+      color: $color_primary;
+    }
+
+    span {
+      text-shadow: 0 0 0 $shadow_color;
+    }
+
+    &:hover span {
+      text-shadow: 3px 3px 0 $shadow_color;
+    }
+  }
+}
+
+// header style light - End
+
 
 // Main Menu - End
 

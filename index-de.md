@@ -3,6 +3,12 @@ layout: "home"
 lang: "de"
 permalink: "/"
 
+############################ Navigation ###############################
+navigation:
+    items:
+    - title: "Services"
+      scroll_to: "#services"
+
 ############################ Banner ##################################
 banner:
   title: 'Hi, Ich bin Marcel <span>Informatiker & Kommunikator</span>' 

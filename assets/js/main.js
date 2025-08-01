@@ -8,6 +8,32 @@
 (function($) {
   "use strict";
 
+  // scroll to next section
+  $(".next_section").on("click", function(event) {
+    let nextSection = $(event.target).closest("section").next("section");
+    if (!nextSection) {
+      return false;
+    }
+    $("html,body").animate({ scrollTop: nextSection.position().top }, "fast");
+    return false;
+  });
+
+  // hide collapsable navbar if clicked anywhere outside the navbar
+  $(document).click(function(event) {
+    const $target = $(event.target);
+    if ($target.hasClass("navbar-toggle")) {
+      return;
+    }
+    const $navbar = $(".navbar-collapse");
+    if (!$navbar || $navbar.hasClass("collapsed")) {
+      return;
+    }
+    if (!$target.hasClass("nav-link") && $navbar.has($target).length > 0) {
+      return;
+    }
+    $navbar.collapse("hide");
+  });
+
   // Back To Top - Start
   // --------------------------------------------------
   $(window).scroll(function() {
@@ -27,16 +53,6 @@
   });
   // Back To Top - End
   // --------------------------------------------------
-  $(function() {
-    $(".next_section").on("click", function(event) {
-      let nextSection = $(event.target).closest("section").next("section");
-      if (!nextSection) {
-        return false;
-      }
-      $("html,body").animate({ scrollTop: nextSection.position().top }, "fast");
-      return false;
-    });
-  });
 
   // Sticky Header - Start
   // --------------------------------------------------
