@@ -52,6 +52,7 @@ $sticky_text_color: lighten($color_black, 10%);
     font-size: 24px;
     color: #fff;
     line-height: 24px;
+    margin-right: -75px;
 
     span {
       text-shadow: 0 0 0 $color_primary;

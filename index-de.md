@@ -8,6 +8,8 @@ navigation:
     items:
     - title: "Services"
       scroll_to: "#services"
+    - title: "Talks & Keynotes"
+      scroll_to: "#talks_keynotes"
 
 ############################ Banner ##################################
 banner:
@@ -50,4 +52,34 @@ services:
       call_to_action:
         text: "Consulting anfragen"
         link: "mailto:requests@marcelmoos.com?subject=Consulting-Anfrage"
+
+############################ Keynotes Feature Section ###########################
+keynotes:
+  title: "Vom Labor auf die Bühne"
+
+  description: >
+    Für mich ist eine Bühne eine Brücke.
+    Hier verbinden sich komplexe Ideen aus der Forschung mit der Neugier des Publikums.
+    Meine Leidenschaft ist es, diese Brücke zu bauen, indem ich <strong>innovative Wissenschaft in packende Storys und klare, überzeugende Einblicke übersetze</strong>.
+    Mein Ziel ist dabei immer dasselbe: Neugier zu wecken
+    und bei jedem im Publikum das Gefühl zu hinterlassen, informiert und inspiriert zu sein.
+  image: "/assets/images/talks/keynote.jpg"
+
+  featured_talks:
+    title: "Featured Talks"
+    items:
+      - title: "Künstliche Intelligenz: Ein Duell zwischen Mensch und Maschine?"
+        place: "TEDxSalzburg 2022"
+        image: "/assets/images/talks/tedx2022.jpg"
+        link: "https://www.youtube.com/watch?v=00R1aguxczA"
+
+      - title: "Introducing AI's twin brother"
+        place: "TEDxSalzburg 2024"
+        image: "/assets/images/talks/tedx2024.jpg"
+        link: "https://www.youtube.com/watch?v=8ebMCHRkpR4"
+  
+  call_to_action:
+    text: "Keynote anfragen"
+    link: "mailto:requests@marcelmoos.com?subject=Keynote-Anfrage"
+
 ---

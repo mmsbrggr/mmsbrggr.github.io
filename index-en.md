@@ -8,6 +8,8 @@ navigation:
     items:
     - title: "Services"
       scroll_to: "#services"
+    - title: "Talks & Keynotes"
+      scroll_to: "#talks_keynotes"
 
 ############################ Banner ##################################
 banner:
@@ -51,64 +53,34 @@ services:
         text: "Request Consulting"
         link: "mailto:requests@marcelmoos.com?subject=Consulting Request"
 
-############################ Awards & recognitions ##################################
-award_recognition:
-  title: "Awards & recognitions"
-  description: "Making changes in your life is great and it is the way we grow and develop as people change is a constant."
-  awards_list:
-    - year: 2019
-      list:
-        - text: "Agency of the Year"
-          url: "#!"
-        - text: "5 x Best Design Solution"
-          url: "#!"
-        - text: "European Design Award"
-          url: "#!"
-    - year: 2018
-      list:
-        - text: "Best Digital Experience"
-          url: "#!"
-        - text: "Multicultural Agency"
-          url: "#!"
-        - text: "2 x Creative Ads"
-          url: "#!"
-        - text: "Agency of the Year"
-          url: "#!"
-        - text: "4 x Best Design Solution"
-          url: "#!"
-        - text: "Creative Digital Product"
-          url: "#!"
-    - year: 2017
-      list:
-        - text: "2 x Best Retail Activation"
-          url: "#!"
-        - text: "7 x Best SM Campaign"
-          url: "#!"
-        - text: "Site of the Year"
-          url: "#!"
-        - text: "Rising Talent Agency"
-          url: "#!"
-    - year: 2016
-      list:
-        - text: "9 x Site of the Day"
-          url: "#!"
-        - text: "22 x Disigner of the Day"
-          url: "#!"
-        - text: "2 x Agency of the Year"
-          url: "#!"
-    - year: 2015
-      list:
-        - text: "Multicultural Agency"
-          url: "#!"
-        - text: "22 x Disigner of the Day"
-          url: "#!"
-        - text: "2 x Best Design Solution"
-          url: "#!"
-        - text: "Best SM Campaign"
-          url: "#!"
-        - text: "Best Retail Activation"
-          url: "#!"
+############################ Keynotes Feature Section ###########################
+keynotes:
+  title: "From the Lab to the Stage"
 
+  description: >
+      For me, a stage is a bridge.
+        It's where complex ideas from the world of research connect with the curiosity of a live audience.
+        My passion is to build that bridge by <strong>translating cutting-edge science into engaging stories and clear, compelling insights</strong>.
+        My goal is always the same: spark curiosity,
+        and leave every person in the audience feeling informed and inspired.
+  image: "/assets/images/talks/keynote.jpg"
+
+  featured_talks:
+    title: "Featured Talks"
+    items:
+      - title: "Künstliche Intelligenz: Ein Duell zwischen Mensch und Maschine? (German)"
+        place: "TEDxSalzburg 2022"
+        image: "/assets/images/talks/tedx2022.jpg"
+        link: "https://www.youtube.com/watch?v=00R1aguxczA"
+
+      - title: "Introducing AI's twin brother (German)"
+        place: "TEDxSalzburg 2024"
+        image: "/assets/images/talks/tedx2024.jpg"
+        link: "https://www.youtube.com/watch?v=8ebMCHRkpR4"
+  
+  call_to_action:
+    text: "Request Talk & Keynote"
+    link: "mailto:requests@marcelmoos.com?subject=Speaking Request"
 
 ############################ Testimonial ##################################
 testimonial:

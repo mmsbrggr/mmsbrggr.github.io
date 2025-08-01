@@ -1510,6 +1510,7 @@
     right: 0;
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
+    border-top: 3px solid #fff;
     backdrop-filter: blur(10px);
   }
 
@@ -1927,10 +1928,6 @@
   .header_style_5.white_content .main_menu_list>li:hover>a,
   .header_style_5.white_content .main_menu_list>li.active>a {
     color: $color_danger;
-  }
-
-  .header_style_5 .main_menu_inner {
-    top: 90px;
   }
 
   .blog_fullwidth {
@@ -2766,10 +2763,6 @@
     max-width: 100px;
   }
 
-  .header_style_2 .main_menu_inner {
-    top: 70px;
-  }
-
   .mobile_menu_btn {
     font-size: 24px;
   }
@@ -3124,10 +3117,6 @@
 
   .breadcrumb_style_5 .page_title {
     font-size: 84px;
-  }
-
-  .header_style_5 .main_menu_inner {
-    top: 88px;
   }
 
   .breadcrumb_style_5 .big_text {
