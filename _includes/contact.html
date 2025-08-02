@@ -1,0 +1,47 @@
+<section id="connect" class="contact_section section_space">
+  <div class="container">
+    <div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+      <h2 class="title_text mb-0">
+        {{ page.contact_info.title }}
+        <strong class="focus_text">{{ page.contact_info.title_strong }}</strong>
+      </h2>
+    </div>
+    <div class="option wow fadeInUp2" data-wow-delay=".2s">
+      <h3>{{ page.contact_info.service_text }}</h3>
+      <a class="btn btn_secondary" href="{{ page.contact_info.service_button_link }}">{{
+        page.contact_info.service_button }}</a>
+    </div>
+
+    <div class="option wow fadeInUp2" data-wow-delay=".2s">
+      <h3>{{ page.contact_info.questions_text }}</h3>
+      <a class="btn btn_secondary" href="{{ page.contact_info.questions_button_link }}">{{
+        page.contact_info.questions_button }}</a>
+    </div>
+
+    <div class="option wow fadeInUp2" data-wow-delay=".3s">
+      <h3>{{ page.contact_info.social_media }}</h3>
+      <ul class="client_items_group ul_li">
+        <li>
+          <a class="client_item" href="{{ site.data.settings.social_settings.linkedin_url }}">
+            <img src="/assets/images/social/linkedin.png" alt="Marcel's LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a class="client_item" href="{{ site.data.settings.social_settings.github_url }}">
+            <img src="/assets/images/social/github.png" alt="Marcel's Github">
+          </a>
+        </li>
+        <li>
+          <a class="client_item" href="{{ site.data.settings.social_settings.instagram_url }}">
+            <img src="/assets/images/social/instagram.png" alt="Marcel's Instagram">
+          </a>
+        </li>
+        <li>
+          <a class="client_item" href="{{ site.data.settings.social_settings.substack_url }}">
+            <img src="/assets/images/social/substack.png" alt="Marcel's Substack">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

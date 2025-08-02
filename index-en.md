@@ -10,6 +10,8 @@ navigation:
       scroll_to: "#services"
     - title: "Talks & Keynotes"
       scroll_to: "#talks_keynotes"
+    - title: "Contact"
+      scroll_to: "#connect"
 
 ############################ Banner ##################################
 banner:
@@ -82,19 +84,15 @@ keynotes:
     text: "Request Talk & Keynote"
     link: "mailto:requests@marcelmoos.com?subject=Speaking Request"
 
-############################ Testimonial ##################################
-testimonial:
-  title: "Client"
-  image: "/assets/images/backgrounds/bg_1.jpg"
-  testmonials:
-    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
-      name: "Stuard Martin"
-      position: "director at Slack"
-    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
-      name: "Stuard Martin"
-      position: "director at Slack"
-    - text: " &#34;Having experience with dexfolio creative studio and it’s the ultimate creative factory version of this strategic basis planet.&#34;"
-      name: "Stuard Martin"
-      position: "director at Slack"
 
+contact_info:
+    title: "Connect with me"
+    title_strong: "Contact"
+    service_text: "Interested in a service?"
+    service_button: "Request Service"
+    service_button_link: "mailto:requests@marcelmoos.com?subject=Request Service"
+    questions_text: "Any other questions?"
+    questions_button: "Drop me a mail"
+    questions_button_link: "mailto:marcel@marcelmoos.com"
+    social_media: "Connect on social media"
 ---

@@ -10,6 +10,8 @@ navigation:
       scroll_to: "#services"
     - title: "Talks & Keynotes"
       scroll_to: "#talks_keynotes"
+    - title: "Kontakt"
+      scroll_to: "#connect"
 
 ############################ Banner ##################################
 banner:
@@ -82,4 +84,15 @@ keynotes:
     text: "Keynote anfragen"
     link: "mailto:requests@marcelmoos.com?subject=Keynote-Anfrage"
 
+
+contact_info:
+    title: "Mit mir vernetzen"
+    title_strong: "Kontakt"
+    service_text: "An einem Service interessiert?"
+    service_button: "Service anfragen"
+    service_button_link: "mailto:requests@marcelmoos.com?subject=Service anfragen"
+    questions_text: "Andere Fragen?"
+    questions_button: "Mail schreiben"
+    questions_button_link: "mailto:marcel@marcelmoos.com"
+    social_media: "Auf social media verbinden"
 ---
