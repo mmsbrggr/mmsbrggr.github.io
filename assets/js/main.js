@@ -380,10 +380,7 @@
   // Wow Js - Start
   // --------------------------------------------------
   var wow = new WOW({
-    animateClass: 'animated',
-    offset: 100,
-    mobile: true,
-    duration: 1000,
+    mobile: false,
   });
   wow.init();
   // Wow Js - End
