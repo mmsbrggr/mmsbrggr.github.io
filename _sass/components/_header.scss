@@ -71,14 +71,13 @@ $sticky_text_color: lighten($color_black, 10%);
 
 .header_section.sticky {
   .logo {
-    color: $sticky_text_color;
+    color: darken($color_primary, 50%);
     font-size: 20px;
     line-height: 20px;
 
 
     .first {
       font-size: 16px;
-      color: $color_primary;
     }
 
     $shadow_color: lighten($color_primary, 20%);
