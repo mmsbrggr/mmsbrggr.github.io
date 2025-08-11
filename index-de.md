@@ -15,7 +15,7 @@ navigation:
 
 ############################ Banner ##################################
 banner:
-  title: 'Hi, Ich bin Marcel <span>Informatiker & Kommunikator</span>' 
+  title: 'Ich bin Marcel, <span>Informatiker & Kommunikator</span>' 
   content: "Dr. Moosbrugger ist Informatikforscher und leidenschaftlicher Wissenschaftskommunikator."
   image: "/assets/images/banner/banner.jpg"
   button:
