@@ -1,7 +1,5 @@
 .talks_keynotes_section {
-  &.bg_blue {
-    background: $color_primary;
-  }
+  background-color: $color_primary;
 
   .description-image {
     display: flex;
