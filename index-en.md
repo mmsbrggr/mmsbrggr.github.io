@@ -66,6 +66,7 @@ keynotes:
         My goal is always the same: spark curiosity,
         and leave every person in the audience feeling informed and inspired.
   image: "/assets/images/talks/keynote.jpg"
+  bg_image: "/assets/images/backgrounds/talks-keynotes.jpg"
 
   featured_talks:
     title: "Featured Talks"

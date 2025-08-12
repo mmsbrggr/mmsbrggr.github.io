@@ -66,7 +66,8 @@ keynotes:
     Mein Ziel ist dabei immer dasselbe: Neugier zu wecken
     und bei jedem im Publikum das Gefühl zu hinterlassen, informiert und inspiriert zu sein.
   image: "/assets/images/talks/keynote.jpg"
-
+  bg_image: "/assets/images/backgrounds/talks-keynotes.jpg"
+  
   featured_talks:
     title: "Featured Talks"
     items:
