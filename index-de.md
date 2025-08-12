@@ -101,7 +101,7 @@ expertise:
         Mein Spezialgebiet ist die automatische Analyse komplexer und probabilistischer Programme. Dabei nutze ich formale Methoden und
         eine <strong>Kombination aus symbolischer und sub-symbolischer KI</strong>, um das Verhalten von Software zu verifizieren und zu analysieren.
         Ich habe zahlreiche referierte wissenschaftliche Artikel veröffentlicht und mein Doktorat 2025
-        <a href="https://de.wikipedia.org/wiki/Promotion_sub_auspiciis">Sub auspiciis Praesidentis</a> abgeschlossen.
+        <a href="https://de.wikipedia.org/wiki/Sub_auspiciis">Sub auspiciis Praesidentis</a> abgeschlossen.
 
     - title: "Software Engineering & Entwicklung"
       icon: "/assets/images/expertise/coding.svg"
