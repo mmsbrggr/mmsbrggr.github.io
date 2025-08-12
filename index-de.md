@@ -10,6 +10,8 @@ navigation:
       scroll_to: "#services"
     - title: "Talks & Keynotes"
       scroll_to: "#talks_keynotes"
+    - title: "Expertise"
+      scroll_to: "#expertise"
     - title: "Kontakt"
       scroll_to: "#connect"
 
@@ -85,6 +87,36 @@ keynotes:
     text: "Keynote anfragen"
     link: "mailto:requests@marcelmoos.com?subject=Keynote-Anfrage"
 
+############################ Expertise ##################################
+expertise:
+  title: "Meine Expertise"
+  description: >
+    Meine Arbeit baut auf drei Säulen auf, die tiefgehende Forschung mit realer Anwendung verbinden.
+  items:
+    - title: "KI & Formale Methoden"
+      icon: "/assets/images/expertise/research.svg"
+      description: >
+        Meine akademische Basis liegt an der Schnittstelle von theoretischer Informatik, Programmiersprachen,
+        dynamischen Systemen und Wahrscheinlichkeitstheorie, mit dem Fokus darauf, <strong>Softwaresysteme sicher und zuverlässig zu machen</strong>.
+        Mein Spezialgebiet ist die automatische Analyse komplexer und probabilistischer Programme. Dabei nutze ich formale Methoden und
+        eine <strong>Kombination aus symbolischer und sub-symbolischer KI</strong>, um das Verhalten von Software zu verifizieren und zu analysieren.
+        Ich habe zahlreiche referierte wissenschaftliche Artikel veröffentlicht und mein Doktorat 2025
+        <a href="https://de.wikipedia.org/wiki/Promotion_sub_auspiciis">Sub auspiciis Praesidentis</a> abgeschlossen.
+
+    - title: "Software Engineering & Entwicklung"
+      icon: "/assets/images/expertise/coding.svg"
+      description: >
+        Was mich an der Informatik schon immer fasziniert hat, ist die Möglichkeit, etwas zu erschaffen – nützliche
+        Tools und Systeme von Grund auf zu bauen. Diese Leidenschaft zieht sich wie ein roter Faden durch meine
+        jahrelange Berufserfahrung: von der <strong>Full-Stack-Webentwicklung</strong> im Kernteam eines Open-Source-CMS bis zum
+        Bau von <strong>spezialisierten Analyse-Tools</strong> und Plugins für diverse IDEs und Programmiersprachen.
+
+    - title: "Wissenschaftskommunikation & Lehre"
+      icon: "/assets/images/expertise/speech.svg"
+      description: >
+        Ein zentraler Teil meiner Mission ist es, komplexe Themen in klare, überzeugende Narrative zu übersetzen.
+        Ich habe zwei TEDx-Talks über die weitreichenden Auswirkungen von KI gehalten, war als Coach für öffentliches Reden tätig
+        und habe Erfahrung in der Organisation und Durchführung von Universitätskursen auf Bachelor-, Master- und PhD-Niveau.
 
 contact_info:
     title: "Mit mir vernetzen"

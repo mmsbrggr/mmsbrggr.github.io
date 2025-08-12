@@ -1,0 +1,27 @@
+<section id="expertise" class="expertise_section section_space">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-12">
+        <div class="section_title_2 wow fadeInUp2" data-wow-delay=".1s">
+          <h2 class="title_text">{{ page.expertise.title }}</h2>
+          <p>
+            {{ page.expertise.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% for item in page.expertise.items %}
+    <div class="wow skill row {% cycle 'fadeInLeft', 'fadeInRight' %}" data-wow-delay=".2s">
+      <div class="skill-image col col-lg-4">
+        <img src="{{ item.icon }}" />
+      </div>
+      <div class="skill-text col col-lg-8">
+        <div>
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

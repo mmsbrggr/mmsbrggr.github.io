@@ -10,6 +10,8 @@ navigation:
       scroll_to: "#services"
     - title: "Talks & Keynotes"
       scroll_to: "#talks_keynotes"
+    - title: "Expertise"
+      scroll_to: "#expertise"
     - title: "Contact"
       scroll_to: "#connect"
 
@@ -84,6 +86,37 @@ keynotes:
   call_to_action:
     text: "Request Talk & Keynote"
     link: "mailto:requests@marcelmoos.com?subject=Speaking Request"
+
+############################ Expertise ##################################
+expertise:
+  title: "My Expertise"
+  description: >
+    My work is built on three core pillars that connect deep research with real-world application.
+  items:
+    - title: AI & Formal Methods Research
+      icon: "/assets/images/expertise/research.svg"
+      description: >
+        My academic foundation lies in the intersection of theoretical computer science, programming languages,
+        dynamical systems and probability theory, with a focus on <strong>making software systems safe and reliable</strong>.
+        I specialize in the automatic analysis of complex and probabilistic programs, using formal methods and
+        a <strong>combination of symbolic and sub-symbolic AI</strong> to verify and analyze software behavior.
+        I published mutliple peer-reviewed scientific papers and obtained my Ph.D. in 2025
+        <a href="https://en.wikipedia.org/wiki/Sub_auspiciis_Praesidentis">Sub auspiciis Praesidentis</a>.
+
+    - title: Software Engineering & Development
+      icon: "/assets/images/expertise/coding.svg"
+      description: >
+        What has always captivated me about computer science is the power to build—to create useful
+        tools and systems from the ground up. This passion is the common thread through my years of
+        professional experience from <strong>full-stack web development</strong> in the core team of an open-source CMS, to building
+        <strong>specialized analysis tools</strong> and plugins for various IDEs and programming languages.
+
+    - title: Science Communication & Teaching
+      icon: "/assets/images/expertise/speech.svg"
+      description: >
+        A core part of my mission is translating complex topics into clear, compelling narratives.
+        I have delivered two TEDx talks on the broader impacts of AI, coached public speaking,
+        and have experience organizing and teaching master-, bachelor- and Ph.D.-level university courses.
 
 
 contact_info:
