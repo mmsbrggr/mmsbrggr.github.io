@@ -18,7 +18,7 @@ navigation:
 ############################ Banner ##################################
 banner:
   title: 'Ich bin Marcel, <span>Informatiker & Kommunikator</span>' 
-  content: "Dr. Moosbrugger ist Informatikforscher und leidenschaftlicher Wissenschaftskommunikator."
+  content: "Neurosymbolic KI &bull; Formale Methoden &bull; Machine Learning &bull; Software Verifikation &bull; Wissenschaftskommunikation"
   image: "/assets/images/banner/banner.jpg"
   button:
     label: "Mehr erfahren"

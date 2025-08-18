@@ -18,7 +18,7 @@ navigation:
 ############################ Banner ##################################
 banner:
   title: 'I am Marcel, computer scientist & communicator' 
-  content: "Dr. Moosbrugger is a computer science researcher and passionate science communicator."
+  content: "Neurosymbolic AI &bull; Formal Methods &bull; Machine Learning &bull; Software Verification &bull; Science Communication"
   image: "/assets/images/banner/banner.jpg"
   button:
     label: "Learn More"
